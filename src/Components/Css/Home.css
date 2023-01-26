@@ -13,3 +13,6 @@
 .Home span {
     background-color: rgb(203, 137, 56);
 }
+.Home {
+    height: 70vh;
+}
