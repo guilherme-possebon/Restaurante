@@ -1,13 +1,15 @@
 .Home .img {
-    background-image: url("/exemplo1.jpg");
-    height: 100vh;
-    background-size: cover;
+    width: 95vw;
+}
+.Home{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .Home h1 {
     color: white;
 
-    left: 50%;
-    transform: translate(-50%);
     position: absolute;
 }
 .Home span {
