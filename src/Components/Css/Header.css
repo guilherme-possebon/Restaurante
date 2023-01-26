@@ -1,0 +1,14 @@
+.Header nav {
+    padding: 2em;
+    background-color: #a56e2ace;
+}
+
+.Header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.Header span {
+    background-color: #9CFA55;
+    padding: .5em;
+}
