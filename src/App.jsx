@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './Components/Header'
 import Home from './Components/Home.jsx'
+import AboutPlusContact from './Components/AboutPlusContact'
 
 function App() {
 
@@ -11,6 +12,9 @@ function App() {
       </section>
       <section>
         <Home />
+      </section>
+      <section>
+        <AboutPlusContact />
       </section>
     </>
   )

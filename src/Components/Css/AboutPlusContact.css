@@ -1,0 +1,86 @@
+/*----------------------------------------------------------------------*/
+/* Os dois */
+/*----------------------------------------------------------------------*/
+
+
+.about, .contact {
+    display: flex;
+    justify-content: center;
+}
+.text {
+    text-align: center;
+}
+.listAbout, .listContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+    height: 533px;
+}
+.imgAbout, .imgContact {
+    background-image: url("/exemplo3.jpg");
+    background-position: right top;
+    background-attachment: fixed;
+    width: 560px;
+    height: 560px
+}
+
+
+/*----------------------------------------------------------------------*/
+/* Sobre */
+/*----------------------------------------------------------------------*/
+
+
+.listAbout ul {
+    list-style: none;
+    padding: 3em;
+}
+.listAbout h3 {
+    padding-bottom: 15px;
+}
+.almoco, .janta {
+    color: white;
+    width: 440px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.313);
+}
+.almoco {
+    background-color: rgb(182, 200, 44);
+}
+.janta {
+    background-color: rgb(34, 33, 36);
+}
+.janta p {
+    padding: 3px;
+}
+
+
+/*----------------------------------------------------------------------*/
+/* Contato */
+/*----------------------------------------------------------------------*/
+
+
+.listContact {
+    display: flex;
+    justify-content: center;
+}
+.listContact ul {
+    list-style: none;
+    background-color: rgba(47, 42, 42, 0.641);
+    color: white;
+    width: 440px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.313);
+    padding: 2em;
+    text-align: center;
+}
+.listContact li {
+    padding: 3px;
+}
+.listContact a {
+    text-decoration: none;
+    color: white;
+}
