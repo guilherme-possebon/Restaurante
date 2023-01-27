@@ -1,3 +1,16 @@
+
+/*----------------------------------------------------------------------*/
+/* Geral */
+/*----------------------------------------------------------------------*/
+
+
+hr {
+    display: none;
+}
+
+
+
+
 /*----------------------------------------------------------------------*/
 /* Os dois */
 /*----------------------------------------------------------------------*/
@@ -15,16 +28,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 560px;
+    width: 410px;
     height: 560px;
 }
 .imgAbout, .imgContact {
     background-image: url("/exemplo3.jpg");
-    background-position: right top;
+    background-position: top center;
     background-attachment: fixed;
-    width: 560px;
+    width: 410px;
     height: 560px;
-}
+}   
 
 
 /*----------------------------------------------------------------------*/
@@ -34,15 +47,15 @@
 
 .listAbout ul {
     list-style: none;
-    padding: 3em;
+    padding: 3em 1em;
 }
 .listAbout h3 {
     padding-bottom: 15px;
 }
 .almoco, .janta {
     color: white;
-    width: 440px;
-    margin: 30px;
+    width: auto;
+    margin: 30px 0px;
     border-radius: 10px;
     box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.313);
 }
@@ -70,7 +83,6 @@
 
 .listContact ul {
     list-style: none;
-    width: 440px;
     margin: 30px;
     padding: 2em;
     text-align: center;
@@ -81,4 +93,35 @@
 .listContact a {
     text-decoration: none;
     color: black;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+/* Media query */
+/*----------------------------------------------------------------------*/
+
+@media screen and (max-width: 820px ) {
+    .listAbout, .listContact {
+        width: auto;
+        height: auto;
+    }
+    .imgAbout, .imgContact {
+        width: auto;
+        height: auto;
+    }
+    hr {
+        display: block;
+        margin: 2em;
+    }
+
+    .almoco, .janta {
+        margin: 30px 0px 0px 0px;
+        width: auto;
+    }
+    .about, .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

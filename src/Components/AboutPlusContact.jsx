@@ -2,7 +2,7 @@ import "./Css/AboutPlusContact.css"
 
 export default function AboutPlusContact() {
     return (
-        <div className="containerAboutPlusContact">
+        <div>
             <div className="about">
                 <div className="containerList">
                     <div className="listAbout">
@@ -19,10 +19,10 @@ export default function AboutPlusContact() {
                     </div>
                 </div>
                 <div className="imgAbout"></div>
-
-
-                
             </div>
+
+<hr />
+                
             <div className="contact">
                 <div className="imgContact"></div>
                     <div className="containerList">
