@@ -11,7 +11,7 @@ function App() {
         <Header />
       </section>
       <section>
-        <Home />
+        <Swipper />
       </section>
       <section>
         <AboutPlusContact />

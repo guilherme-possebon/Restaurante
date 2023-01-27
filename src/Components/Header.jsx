@@ -5,7 +5,7 @@ export default function Header() {
         <header className="Header">
             <nav>
                 <ul>
-                    <li>Logo</li>
+                    <li>Logo com nome</li>
                     <li><span className="login">Login</span></li>
                 </ul>
             </nav>

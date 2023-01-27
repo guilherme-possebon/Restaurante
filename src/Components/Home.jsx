@@ -6,7 +6,7 @@ import ex2 from '/exemplo2.jpg'
 import ex3 from '/exemplo3.jpg'
 import ex4 from '/exemplo4.jpg'
 
-export default function Home() {
+export default function Swipper() {
 // const swiper = new Swiper('.swiper', {
 //     // Optional parameters
 //     direction: 'vertical',
@@ -29,8 +29,7 @@ export default function Home() {
 //     },
 //     });
     return (
-        <div className="Home">
-            <h1><span>Nome do restaurante</span></h1>
+        <div className="Swipper">
             <div className="img"></div>
         </div>
     )
