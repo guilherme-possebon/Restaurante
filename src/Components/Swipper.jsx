@@ -1,4 +1,4 @@
-import "./Css/Home.css"
+import "./Css/Swipper.css"
 
 
 import ex1 from '/exemplo1.jpg'

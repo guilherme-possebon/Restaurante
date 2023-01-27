@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './Components/Header'
-import Home from './Components/Home.jsx'
+import Swipper from './Components/Swipper'
 import AboutPlusContact from './Components/AboutPlusContact'
 
 function App() {
