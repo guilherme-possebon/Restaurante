@@ -4,13 +4,16 @@ import Swipper from './Components/Swipper'
 import AboutPlusContact from './Components/AboutPlusContact'
 import Footer from './Components/Footer'
 
+import logoHeader from '/Logo3.png'
+import logoFooter from '/Logo4.png'
+
 function App() {
 
   return (
     <>
 
       <section>
-        <Header />
+        <Header imglogo={logoHeader} />
       </section>
 
       <section>
@@ -18,10 +21,10 @@ function App() {
       </section>
 
       <section>
-        <AboutPlusContact />
+        <AboutPlusContact numenro={'+55 (51) 1245-6789'} email={'meurestaurante@gmail.com'} emailHref={'mailto:Emaildeexemplo@gmail.com'} facebook={'MeuRestaurante'} facebookHref={'https://pt-br.facebook.com/Meurestaurante.com.br'} instagram={'MeuRestaurante'} instagramHref={'https://www.instagram.com/MeuRestaurante/'} />
       </section>
       <section>
-        <Footer />
+        <Footer imglogo={logoFooter} />
       </section>
 
     </>

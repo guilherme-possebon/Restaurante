@@ -1,13 +1,15 @@
 import './Css/Footer.css'
 
-export default function Footer() {
+import { FaInstagram, FaFacebookF } from "react-icons/fa";
+
+export default function Footer({imglogo}) {
     return (
         <footer>
             <div className='containerFooter'>
                 <div className='footerWrapper'>
-                    <div>
-                        <div className='logo'>Logo</div>
-                        <div className='socialMedia'>Midia social</div>
+                    <div className='column'>
+                        <div className='logo'><img src={imglogo} alt="" className="imgLogo" /></div>
+                        <div className='socialMedia'><FaInstagram/> <FaFacebookF /></div>
                     </div>
                     <div>
                         <ul className='footerList'>
@@ -15,7 +17,7 @@ export default function Footer() {
                             <li>Exemplo 2</li>
                             <li>Exemplo 3</li>
                             <li>Exemplo 4</li>
-                            <li>Exemplo 5</li>w
+                            <li>Exemplo 5</li>
                         </ul>
                     </div>
                 </div>

@@ -1,5 +1,7 @@
 import "./Css/AboutPlusContact.css"
 
+import { FaPhoneAlt, FaRegEnvelope, FaFacebook, FaInstagram } from "react-icons/fa";
+
 export default function AboutPlusContact({numenro, email, emailHref, facebook, facebookHref, instagram, instagramHref}) {
     return (
         <div>
@@ -29,10 +31,10 @@ export default function AboutPlusContact({numenro, email, emailHref, facebook, f
                         <div className="listContact">
                             <h2>Contato</h2>
                             <ul>
-                                <li><span>{numenro}</span></li>
-                                <li><span><a href={emailHref}>{email}</a></span></li>
-                                <li><span><a href={facebookHref}>{facebook}</a></span></li>
-                                <li><span><a href={instagramHref}>{instagram}</a></span></li>
+                                <li><FaPhoneAlt /><span>{numenro}</span></li>
+                                <li><FaRegEnvelope /><span><a href={emailHref}>{email}</a></span></li>
+                                <li><FaFacebook /><span><a href={facebookHref}>{facebook}</a></span></li>
+                                <li><FaInstagram /><span><a href={instagramHref}>{instagram}</a></span></li>
                             </ul>
                         </div>
                     </div>

@@ -22,11 +22,16 @@ hr {
 .text {
     text-align: center;
 }
-.listAbout, .listContact {
+.listAbout {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 410px;
+    height: 560px;
+}
+.listContact {
+    display: grid;
     width: 410px;
     height: 560px;
 }
@@ -64,12 +69,6 @@ hr {
 /* Contato */
 /*----------------------------------------------------------------------*/
 
-.listContact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 .listContact ul {
     list-style: none;
