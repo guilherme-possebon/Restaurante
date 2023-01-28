@@ -1,0 +1,24 @@
+footer {
+    background-color: rgb(193, 110, 59);    
+}
+.containerFooter {
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerWrapper {   
+    justify-content: space-evenly;
+}
+.logo {
+    padding-bottom: 2em;
+}
+.socialMedia {
+    padding-bottom: 3em;
+}
+.footerList {
+    list-style: none;
+}
+.footerList li {
+    padding-bottom: 1em;
+}

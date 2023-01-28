@@ -1,11 +1,11 @@
 import "./Css/Header.css"
 
-export default function Header() {
+export default function Header({imglogo}) {
     return (
         <header className="Header">
             <nav>
                 <ul>
-                    <li>Logo com nome</li>
+                    <li><img src={imglogo} alt="" /></li>
                     <li><span className="login">Login</span></li>
                 </ul>
             </nav>

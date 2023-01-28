@@ -1,6 +1,6 @@
 import "./Css/AboutPlusContact.css"
 
-export default function AboutPlusContact() {
+export default function AboutPlusContact({numenro, email, emailHref, facebook, facebookHref, instagram, instagramHref}) {
     return (
         <div>
             <div className="about">
@@ -29,10 +29,10 @@ export default function AboutPlusContact() {
                         <div className="listContact">
                             <h2>Contato</h2>
                             <ul>
-                                <li><span>+55 (51) 12345-6789</span></li>
-                                <li><span><a href="mailto:emaildecontatodorestaurante@gmail.com">emailcontato@gmail.com</a></span></li>
-                                <li><span><a href="facebook.gg/facedorestaurante">Facebook do restaurante</a></span></li>
-                                <li><span><a href="instagram.com.br/instadorestaurante">@restaurante</a></span></li>
+                                <li><span>{numenro}</span></li>
+                                <li><span><a href={emailHref}>{email}</a></span></li>
+                                <li><span><a href={facebookHref}>{facebook}</a></span></li>
+                                <li><span><a href={instagramHref}>{instagram}</a></span></li>
                             </ul>
                         </div>
                     </div>

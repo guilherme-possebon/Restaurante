@@ -17,7 +17,7 @@ function App() {
         <Swipper />
       </section>
 
-      <section className='sectionAbout'>
+      <section>
         <AboutPlusContact />
       </section>
       <section>
