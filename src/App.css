@@ -1,3 +1,8 @@
+/*----------------------------------------------------------------------*/
+/* Geral */
+/*----------------------------------------------------------------------*/
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,4 +11,96 @@
 }
 .imgLogo {
     max-width: 200px;
+}
+
+hr {
+    display: none;
+}
+
+
+/*----------------------------------------------------------------------*/
+/* Para about, contact, reserva e delivery */
+/*----------------------------------------------------------------------*/
+
+
+.Container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.ContainerListChildrenAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 410px;
+    height: 560px;
+}
+.ContainerImgAll {
+    width: 410px;
+    height: 560px;
+}   
+.ContainerListChildrenAll ul {
+    list-style: none;
+    padding: 3em 1em;
+}
+.ContainerListChildrenAll h3 {
+    padding-bottom: 15px;
+}
+
+
+/*----------------------------------------------------------------------*/
+/* AboutPlusContact */
+/*----------------------------------------------------------------------*/
+
+
+.ImgAboutContact {
+    background-image: url("/exemplo3.jpg");
+    background-position: top center;
+    background-attachment: fixed;
+}
+.divListParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    margin: 2em;
+    text-align: center;
+}
+.divListParent div {
+    padding: 1em;
+}
+.divListParent a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*----------------------------------------------------------------------*/
+/* ReservaAndDelivery */
+/*----------------------------------------------------------------------*/
+
+
+.imgReserva {
+    background-image: url('/reserva.jpg');
+    background-size: cover;
+}
+.imgEntrega {
+    background-image: url('/delivery.jpg');
+    background-size: cover;
+}
+.text {
+    padding: 3em 1em;
+}
+.btnRD {
+    margin: 2em 0;
+    color: #fff;
+    background-color: #997d34d1;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.espaco {
+    margin-bottom: 2em;
 }

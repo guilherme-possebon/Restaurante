@@ -17,7 +17,9 @@ footer {
     align-items: center;
     justify-content: space-evenly
 }
-
+.logo {
+    padding-bottom: 20px;
+}
 .socialMedia {
     font-size: 1.4em;
 }
