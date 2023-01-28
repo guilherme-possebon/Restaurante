@@ -1,17 +1,20 @@
-.Home .img {
+.Swipper .img {
     width: 95vw;
 }
-.Home{
+.Swipper{
     padding-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.Home h1 {
+.Swipper h1 {
     color: white;
 
     position: absolute;
 }
-.Home span {
+.Swipper span {
     background-color: rgb(203, 137, 56);
+}
+.Swipper {
+    height: 70vh;
 }
