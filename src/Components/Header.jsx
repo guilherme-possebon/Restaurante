@@ -1,14 +1,11 @@
 import "./Css/Header.css"
+import HamburgerMenu from './HamburgerMenu'
+import logoHeader from '/Logo3.png'
 
-export default function Header({imglogo}) {
+export default function Header() {
     return (
         <header className="Header">
-            <nav>
-                <ul>
-                    <li><img src={imglogo} alt="" className="imgLogo" /></li>
-                    <li><span className="login">Login</span></li>
-                </ul>
-            </nav>
+            <HamburgerMenu  imglogo={logoHeader} />
         </header>
     )
 }

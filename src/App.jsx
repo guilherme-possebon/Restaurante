@@ -6,7 +6,6 @@ import AboutPlusContact from './Components/AboutPlusContact'
 import ReservaAndDelivery from './Components/ReservaAndDelivery'
 import Footer from './Components/Footer'
 
-import logoHeader from '/Logo3.png'
 import logoFooter from '/Logo4.png'
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
     <>
 
       <section>
-        <Header imglogo={logoHeader} />
+        <Header />
       </section>
 
       <section>
