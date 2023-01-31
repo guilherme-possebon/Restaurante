@@ -1,9 +1,9 @@
 {
   "name": "reactapp",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://guilherme-possebon.github.io/Restaurante",
+  "homepage": "https://guilherme-possebon.github.io/Restaurante/Cardapio",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -14,7 +14,6 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
     "react-router-dom": "^6.8.0"
   },
   "devDependencies": {

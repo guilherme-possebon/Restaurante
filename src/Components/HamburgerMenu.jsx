@@ -32,8 +32,8 @@ const HamburgerMenu = ({imglogo}) => {
             <nav>
                     <div><img src={imglogo} alt="" className="imgLogo" /></div>
                 <ul className='list'>
-                    <li className='itens'><a href="/cardapio">Cardapio</a></li>
                     <li className='itens'><a href="#pedido">Pedido</a></li>
+                    <li className='itens'><a href="/Restaurante/Cardapio">Cardapio</a></li>
                     <li className='itens'><a href="#reserva">Reserva</a></li>
                     <li className='itens'><span className="login">Login</span></li>
                 </ul>
