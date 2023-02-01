@@ -1,0 +1,10 @@
+.CDContainer {
+    display: flex;
+    border: 1px solid black;
+    margin: .4em 0 6em 0;
+    width: 100%;
+    flex-direction: column;
+}
+.PageName {
+    margin: .7em 0;
+}

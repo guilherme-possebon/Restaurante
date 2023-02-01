@@ -1,37 +1,37 @@
 import './App.css'
 import './MediaQuery.css'
-import Header from './Components/Header'
-import Swipper from './Components/Swipper'
-import AboutPlusContact from './Components/AboutPlusContact'
-import ReservaAndDelivery from './Components/ReservaAndDelivery'
 import Footer from './Components/Footer'
 
+import Entrada from './Components/Pages/Entrada'
+import Pratos from './Components/Pages/Pratos'
+import Porcao from './Components/Pages/Porcao'
+import Bebidas from './Components/Pages/Bebidas'
+
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
+
 import logoFooter from '/Logo4.png'
+import MainContent from './Components/MainContent'
 
 function App() {
 
   return (
     <>
 
-      <section>
-        <Header />
-      </section>
+      <Router>
 
-      <section>
-        <Swipper />
-      </section>
+            <Routes>
 
-      <section>
-        <AboutPlusContact numenro={'+55 (51) 1245-6789'} email={'meurestaurante@gmail.com'} emailHref={'mailto:Emaildeexemplo@gmail.com'} facebook={'MeuRestaurante'} facebookHref={'https://pt-br.facebook.com/Meurestaurante.com.br'} instagram={'MeuRestaurante'} instagramHref={'https://www.instagram.com/MeuRestaurante/'} />
-      </section>
-        <hr />
-      <section>
-        <ReservaAndDelivery />
-      </section>
+                <Route exact path='/Restaurante/' element={<MainContent />}></Route>
+                <Route path='/Restaurante/Cardapio/' element={<Entrada />}></Route>
+                <Route path='/Restaurante/Cardapio/pratos' element={<Pratos />}></Route>
+                <Route path='/Restaurante/Cardapio/porcao' element={<Porcao />}></Route>
+                <Route path='/Restaurante/Cardapio/bebidas' element={<Bebidas />}></Route>
 
-      <section>
-        <Footer imglogo={logoFooter} />
-      </section>
+            </Routes>
+
+          <Footer imglogo={logoFooter} />
+      </Router>
 
     </>
   )

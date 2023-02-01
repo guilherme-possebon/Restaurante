@@ -1,6 +1,6 @@
 import { FaPhoneAlt, FaRegEnvelope, FaFacebook, FaInstagram } from "react-icons/fa";
 
-export default function AboutPlusContact({numenro, email, emailHref, facebook, facebookHref, instagram, instagramHref}) {
+export default function AboutPlusContact({numero, email, emailHref, facebook, facebookHref, instagram, instagramHref}) {
     return (
         <div>
             <div className="Container">
@@ -19,7 +19,7 @@ export default function AboutPlusContact({numenro, email, emailHref, facebook, f
                 <div className="ContainerImgAll ImgAboutContact"></div>
             </div>
 
-<hr />
+<hr className="HrRemovivel" />
                 
             <div className="Container">
                 <div className="ContainerImgAll ImgAboutContact"></div>
@@ -33,7 +33,7 @@ export default function AboutPlusContact({numenro, email, emailHref, facebook, f
                                         <FaPhoneAlt />
                                     </span>
                                     <p>
-                                        {numenro}
+                                        {numero}
                                     </p>
                                 </div>
 
