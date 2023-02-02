@@ -12,12 +12,9 @@ import tabuaEnchidos from '/Tábua-de-enchidos.jpg'
 import tabuaQueijos from '/Tábua-de-queijos.jpg'
 import HeaderCardapio from '../HeaderCardapio'
 import NavBarCardapio from '../Layout/NavBarCardapio'
-import VoltarButton from '../Layout/VoltarButton'
 
 export default function Bebidas() {
     return (
-        <div>
-            <VoltarButton />
             <div className="MainContainer">
                     <HeaderCardapio />
                     <NavBarCardapio />
@@ -46,6 +43,5 @@ export default function Bebidas() {
                     <CardapioItensSize NomeDoPrato={"teste"} Desc={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus"} PrecoP={"R$ 30,00"} PrecoM={"R$ 40,00"} PrecoG={"R$ 50,00"} imgPrato={SaladaOrelha} />
                 </div>
             </div>
-        </div>
     )
 }

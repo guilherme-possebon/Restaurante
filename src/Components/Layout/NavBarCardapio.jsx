@@ -1,31 +1,42 @@
 import { Link } from "react-router-dom"
 import '../Css/NavBar.css'
-
+import '../Css/HeaderCardapio.css'
+import { FaArrowLeft } from "react-icons/fa";
 
 export default function NavBarCardapio() {
     return (
         <nav className='opcao'>
             <ul>
-                <li>
-                    <Link to={"/Restaurante/Cardapio/"} className='itens'  >
+
+                <Link to={"/Restaurante/Cardapio/"} className='itens'  >
+                    <li>
                         Entrada
-                    </Link>
-                </li>
-                <li>
-                    <Link to={"/Restaurante/Cardapio/pratos"} className='itens' >
+                    </li>
+                </Link>
+
+                <Link to={"/Restaurante/Cardapio/pratos"} className='itens' >
+                    <li>
                         Pratos
-                    </Link>
-                </li>
-                <li>
-                    <Link to={"/Restaurante/Cardapio/porcao"} className='itens' >
+                    </li>
+                </Link>
+
+                <Link to={"/Restaurante/Cardapio/porcao"} className='itens' >
+                    <li>
                         Porção
-                    </Link>
-                </li>
-                <li>
-                    <Link to={"/Restaurante/Cardapio/bebidas"} className='itens' >
+                    </li>
+                </Link>
+
+                <Link to={"/Restaurante/Cardapio/bebidas"} className='itens' >
+                    <li>
                         Bebidas
-                    </Link>
-                </li>
+                    </li>
+                </Link>
+
+                <Link to={"/Restaurante/"} className="ButtonIcon HeaderButton itens">
+                    <li>
+                        <FaArrowLeft/>Voltar
+                    </li>
+                </Link>
             </ul>
         </nav>
     )
