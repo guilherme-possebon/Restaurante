@@ -1,6 +1,7 @@
 export default function ReservaAndDelivery() {
     return (
         <div>
+            
             <section className='Container'  id='pedido' >
                     <div className="CotainerListAll">
                             <div className='ContainerListChildrenAll'>

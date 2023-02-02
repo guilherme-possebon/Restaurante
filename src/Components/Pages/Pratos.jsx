@@ -1,6 +1,5 @@
 import CardapioItens1OP from '../Layout/CardapioItens1OP'
 import CardapioItensSize from '../Layout/CardapioItensSize'
-import '../Css/Cardapio.css'
 
 import Canapes from '/Canapes.jpg'
 import Marmita from '/marmita.jpg'
