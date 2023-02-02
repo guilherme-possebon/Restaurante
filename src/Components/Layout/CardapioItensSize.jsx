@@ -1,4 +1,3 @@
-import '../Css/Cardapio.css'
 
 
 export default function CardapioItensSize({ NomeDoPrato, imgPrato, Desc, PrecoP, PrecoM, PrecoG }) {

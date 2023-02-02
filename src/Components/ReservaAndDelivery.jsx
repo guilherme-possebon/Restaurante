@@ -13,7 +13,7 @@ export default function ReservaAndDelivery() {
                     <div className='imgEntrega ContainerImgAll'></div>
             </section>
 
-            <hr />
+            <hr className="HrRemovivel" />
 
             <section className='Container espaco'  id="reserva" >
                     <div className='imgReserva ContainerImgAll'></div>

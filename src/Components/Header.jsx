@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom"
 
-// Css
-
-import "./Css/Header.css"
 
 // imagens
 

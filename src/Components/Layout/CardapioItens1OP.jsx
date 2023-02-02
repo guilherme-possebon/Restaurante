@@ -1,4 +1,4 @@
-import '../Css/Cardapio.css'
+
 
 
 export default function CardapioItens1OP({ NomeDoPrato, imgPrato, Desc, Preco }) {

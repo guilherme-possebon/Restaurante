@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom"
-import '../Css/NavBar.css'
-import '../Css/Header.css'
 import { FaArrowLeft } from "react-icons/fa";
 
 export default function NavBarCardapio() {
