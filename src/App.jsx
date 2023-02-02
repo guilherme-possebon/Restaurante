@@ -19,8 +19,8 @@ function App() {
     <>
       <Router>
             <Routes>
-                <Route exact path='/Restaurante/' element={<Entrada />}></Route>
-                <Route exact path='/Restaurante/Cardapio/' element={<MainContent />}></Route>
+                <Route exact path='/Restaurante/' element={<MainContent />}></Route>
+                <Route exact path='/Restaurante/Cardapio/' element={<Entrada />}></Route>
                 <Route path='/Restaurante/Cardapio/pratos' element={<Pratos />}></Route>
                 <Route path='/Restaurante/Cardapio/porcao' element={<Porcao />}></Route>
                 <Route path='/Restaurante/Cardapio/bebidas' element={<Bebidas />}></Route>
