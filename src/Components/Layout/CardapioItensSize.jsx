@@ -2,7 +2,7 @@
 
 export default function CardapioItensSize({ NomeDoPrato, imgPrato, Desc, PrecoP, PrecoM, PrecoG }) {
     return (
-        <div>
+        <li>
             <div className='CDIContainer'>
                 <div className="text">
                     <h1>{NomeDoPrato}</h1>
@@ -14,6 +14,6 @@ export default function CardapioItensSize({ NomeDoPrato, imgPrato, Desc, PrecoP,
                     <p className='preco'>{PrecoG} - G</p>
                 </div>
             </div>
-        </div>
+        </li>
     )
 }

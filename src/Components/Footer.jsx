@@ -18,6 +18,7 @@ export default function Footer({imglogo}) {
                             <li>Exemplo 3</li>
                             <li>Exemplo 4</li>
                             <li>Exemplo 5</li>
+                            <li>Exemplo 56</li>
                         </ul>
                     </div>
                 </div>

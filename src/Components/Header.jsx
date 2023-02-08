@@ -48,7 +48,7 @@ const HamburgerMenu = ({imglogo}) => {
               </div>
               <ul className='list'>
                   <li className='itens'><a href="#pedido">Pedido</a></li>
-                  <li className='itens'><Link to={'/Restaurante/Cardapio/'} >Cardapio</Link></li>
+                  <li className='itens'><Link to={'/Cardapio/'} >Cardapio</Link></li>
                   <li className='itens'><a href="#reserva">Reserva</a></li>
                   <li className='itens'><span className="login">Login</span></li>
                   
