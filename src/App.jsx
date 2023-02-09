@@ -1,5 +1,4 @@
 import './App.css'
-import './MediaQuery.css'
 import Footer from './Components/Footer'
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
