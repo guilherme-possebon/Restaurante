@@ -4,15 +4,14 @@ import Pratos from "./Pages/Pratos"
 import Bebidas from "./Pages/Bebidas"
 
 import HeaderCardapio from "./HeaderCardapio"
-import NavBarCardapio from "./Layout/NavBarCardapio"
+
 
 
 export default function Cardapio() {
     return (
         <div className="MainContainer">
 
-                <HeaderCardapio />
-                <NavBarCardapio  />
+                    <HeaderCardapio />
             
             <section id="Entrada">
                 <Entrada />
