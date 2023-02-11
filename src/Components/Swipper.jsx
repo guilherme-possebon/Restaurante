@@ -1,8 +1,10 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+import ex1 from '/exemplo1.jpg'
+import ex2 from '/exemplo2.jpg'
+import ex3 from '/exemplo3.jpg'
+import ex4 from '/exemplo4.jpg'
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Css/Swipper.css";
@@ -22,16 +24,16 @@ export default function MySwipper() {
         className="mySwiper"
       >
         <SwiperSlide>
-            <img src="https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bGFtYm9yZ2hpbml8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60" alt="" />
+            <img src={ex1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-            <img src="https://images.unsplash.com/photo-1580654712603-eb43273aff33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxhbWJvcmdoaW5pfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="" />
+            <img src={ex2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-            <img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjZ8fGxhbWJvcmdoaW5pfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="" />
+            <img src={ex3} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-            <img src="https://images.unsplash.com/photo-1636866120504-81110da6e04f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fGxhbWJvcmdoaW5pfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60" alt="" />
+            <img src={ex4} alt="" />
         </SwiperSlide>
       </Swiper>
     </>
