@@ -1,4 +1,4 @@
-import CardapioItens1OP from '../CardapioItens1OP'
+import CardapioItens1OP from '../Layout/CardapioItens1OP'
 import CardapioItensSize from '../Layout/CardapioItensSize'
 
 import Canapes from '/Canapes.jpg'

@@ -9,7 +9,11 @@ export default function Footer({imglogo}) {
                 <div className='footerWrapper'>
                     <div className='column'>
                         <div className='logo'><img src={imglogo} alt="" className="imgLogo" /></div>
-                        <div className='socialMedia'><FaInstagram/> <FaFacebookF /></div>
+                        <div className='socialMedia'>
+                            
+                            <a href="#"><FaInstagram/></a> 
+                            <a href="#"><FaFacebookF /></a>
+                        </div>
                     </div>
                     <div>
                         <ul className='footerList'>

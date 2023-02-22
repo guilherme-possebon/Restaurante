@@ -1,5 +1,5 @@
 import imgLogo from '/Logo3.png'
-import NavBarCardapio from "./Layout/NavBarCardapio"
+import NavBarCardapio from "./NavBarCardapio"
 
 
 

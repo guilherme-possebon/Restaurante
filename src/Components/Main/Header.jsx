@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom"
 
 
 // imagens
@@ -48,7 +47,7 @@ const HamburgerMenu = ({imglogo}) => {
               </div>
               <ul className='list'>
                   <li className='itens'><a href="#pedido">Pedido</a></li>
-                  <li className='itens'><Link to={'/Cardapio/'} >Cardapio</Link></li>
+                  <li className='itens'><a href="/Cardapio">Cardapio</a></li>
                   <li className='itens'><a href="#reserva">Reserva</a></li>
                   <li className='itens'><span className="login">Login</span></li>
                   

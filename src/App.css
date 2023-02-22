@@ -220,76 +220,6 @@
 
 
 /*----------------------------------------------------------------------*/
-/* Header cardapio */
-/*----------------------------------------------------------------------*/
-
-
-.HeaderButton a {
-    text-decoration: none;
-    color: white;   
-}
-.ButtonIcon svg {
-    padding-top: 4px;
-}
-
-
-/*----------------------------------------------------------------------*/
-/* Cardapio */
-/*----------------------------------------------------------------------*/
-
-
-.MainContainer {
-    max-width: 1201px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-}
-.CDContainer {
-    display: flex;
-    border: 1px solid black;
-    margin: 1em 0;
-    width: 100%;
-    flex-direction: column;
-    list-style: none;
-}
-.CDIContainer {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin: 1em 0;
-}
-
-.img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.img img {
-    width: 70px;
-}
-.text {
-    max-width: 75%;
-}
-.text h1 {
-    color: black;
-    margin: .6em 0 .6em 10px;
-}
-.text p {
-    padding: 0 20px 0 10px;
-}
-.PageName {
-    margin: .7em 0;
-}
-#Entrada, #Pratos, #Porção, #Drinks {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-/*----------------------------------------------------------------------*/
 /* Footer */
 /*----------------------------------------------------------------------*/
 
@@ -317,6 +247,9 @@ footer {
 }
 .socialMedia {
     font-size: 1.4em;
+}
+.socialMedia a {
+    color: black;
 }
 .footerList {
     list-style: none;
@@ -347,22 +280,5 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-}
-@media screen and (min-width: 1200px ) {
-    .CDContainer {
-        display: flex;
-        border: 1px solid black;
-        margin: 1em 0;
-        width: 100%;
-        flex-wrap: wrap;
-        flex-direction: row;
-        list-style: none;
-    }
-    .CDIContainer {
-        display: flex;
-        width: 599px;
-        justify-content: space-between;
-        margin: 1em 0;
     }
 }
