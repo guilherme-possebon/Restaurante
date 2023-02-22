@@ -5,6 +5,7 @@ import Bebidas from "./Pages/Bebidas"
 
 import HeaderCardapio from "./Layout/HeaderCardapio"
 
+
 function Cardapio() {
 
   return (
@@ -30,7 +31,6 @@ function Cardapio() {
       </section>
 
       </div>
-      <Footer />
     </>
   )
 }

@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+
+
 export default function ReservaAndDelivery() {
     return (
         <div>
@@ -7,7 +10,7 @@ export default function ReservaAndDelivery() {
                             <div className='ContainerListChildrenAll'>
                         <h1>Pedido</h1>
                                 <div className='text'>Faça seu pedido que levaremos até a sua residência</div>
-                                <div><a href="/Cardapio"><button  className='btnRD'>Fazer pedido</button></a></div>
+                                <div><Link to="/cardapio"><button  className='btnRD'>Fazer pedido</button></Link></div>
                             </div>
                     </div>
                     <div className='imgEntrega ContainerImgAll'></div>

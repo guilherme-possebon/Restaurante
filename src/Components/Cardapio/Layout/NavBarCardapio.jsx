@@ -1,4 +1,5 @@
 import { FaArrowLeft } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 export default function NavBarCardapio() {
     return (
@@ -26,11 +27,11 @@ export default function NavBarCardapio() {
                                     Bebidas
                                 </li>
                             </a>
-                            <a href="/" className="ButtonIcon HeaderButton itens">
+                            <Link to="/" className="ButtonIcon HeaderButton itens">
                                 <li>
                                     <FaArrowLeft/>Voltar
                                 </li>
-                            </a>
+                            </Link>
                         </ul>
                     </div>
                 </nav>
