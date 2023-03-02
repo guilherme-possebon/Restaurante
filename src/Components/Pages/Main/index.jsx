@@ -1,7 +1,9 @@
-import MySwipper from './Swipper'
-import AboutPlusContact from './AboutPlusContact'
-import ReservaAndDelivery from './ReservaAndDelivery'
-import Header from './Header'
+import MySwipper from './Layouts/Swipper'
+import AboutPlusContact from './Layouts/AboutPlusContact'
+import ReservaAndDelivery from './Layouts/ReservaAndDelivery'
+import Header from './Layouts/Header'
+
+import "./Css/Main.css"
 
 
 export default function MainContent() {

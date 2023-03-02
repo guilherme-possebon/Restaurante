@@ -3,6 +3,8 @@ import Porcao from "./Pages/Porcao"
 import Pratos from "./Pages/Pratos"
 import Bebidas from "./Pages/Bebidas"
 
+import './Css/Cardapio.css'
+
 import HeaderCardapio from "./Layout/HeaderCardapio"
 
 

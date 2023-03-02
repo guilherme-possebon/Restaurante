@@ -11,6 +11,7 @@ import tabuaEnchidos from '/Tábua-de-enchidos.jpg'
 import tabuaQueijos from '/Tábua-de-queijos.jpg'
 
 
+
 export default function Pratos() {
     return (
             <>

@@ -7,9 +7,9 @@ import ex4 from '/exemplo4.jpg'
 
 import "swiper/css";
 import "swiper/css/pagination";
-import "./Css/Swipper.css";
+import "../Css/Swipper.css";
 
-// import required modules
+
 import { Pagination } from "swiper";
 
 export default function MySwipper() {
