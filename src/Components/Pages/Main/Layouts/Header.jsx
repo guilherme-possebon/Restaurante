@@ -50,7 +50,7 @@ const HamburgerMenu = ({imglogo}) => {
                   <li className='itens'><a href="#pedido">Pedido</a></li>
                   <li className='itens'><Link to="/Cardapio">Cardapio</Link></li>
                   <li className='itens'><a href="#reserva">Reserva</a></li>
-                  <li className='itens'><span className="login">Login</span></li>
+                  <li className='itens'><Link to={'/login'}><span>Login</span></Link></li>
                   
               </ul>
           </nav>
