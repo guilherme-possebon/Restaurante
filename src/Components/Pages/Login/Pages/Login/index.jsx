@@ -46,7 +46,7 @@ export default function Login() {
                         <Link to={'/register'}>Criar conta</Link>
                     </div>
                     <div>
-                        <input type="submit" value={'Criar conta'} onClick={HandleSingIn} />
+                        <input type="submit" value={'Entrar na conta'} onClick={HandleSingIn} />
                         <Signin />
                     </div>
                 </form>

@@ -2,6 +2,8 @@ import MySwipper from './Layouts/Swipper'
 import AboutPlusContact from './Layouts/AboutPlusContact'
 import ReservaAndDelivery from './Layouts/ReservaAndDelivery'
 import Header from './Layouts/Header'
+import Footer from './Layouts/Footer'
+import logoFooter from '/Logo4.png'
 
 import "./Css/Main.scss"
 
@@ -25,6 +27,10 @@ export default function MainContent() {
 
             <section className='ReservaAndDelivery'>
                 <ReservaAndDelivery />
+            </section>
+
+            <section>
+                <Footer imglogo={logoFooter} />
             </section>
         </>
     )
