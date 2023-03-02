@@ -3,7 +3,7 @@ import AboutPlusContact from './Layouts/AboutPlusContact'
 import ReservaAndDelivery from './Layouts/ReservaAndDelivery'
 import Header from './Layouts/Header'
 
-import "./Css/Main.css"
+import "./Css/Main.scss"
 
 
 export default function MainContent() {
