@@ -125,7 +125,6 @@
 .Header {
     display: flex;
     background-color: rgba(255, 255, 255, 0.92);
-    position: sticky;
     top: 0px;
     width: 100%;
     justify-content: center;
@@ -150,27 +149,23 @@
             list-style: none;
             color: white;
             justify-content: center;
-
-            span {
-                color: white;
-                background-color: rgba(57, 207, 90, 0.99);
-                padding: 7px;
-                border-radius: 10px;
-                cursor: pointer;
-            }
         }
         ul {
             list-style: none;
             display: flex;
             justify-content: space-around;
 
+            .itens {
+                background-color: rgb(53, 53, 53);
+                border-radius: 10px;
+                cursor: pointer;
+                padding: 7px;
+            }
+
             a {
                 text-decoration: none;
                 color: white;
-                background-color: rgb(53, 53, 53);
-                padding: 7px;
-                border-radius: 10px;
-                cursor: pointer;
+               
             }
         }
     }

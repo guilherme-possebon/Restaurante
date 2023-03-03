@@ -28,16 +28,16 @@ export default function MySwipper() {
         className="mySwiper"
       >
         <SwiperSlide>
-            <img src={ex1} alt="" />
+            <img src={ex1} alt="Exemplo1" />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={ex2} alt="" />
+            <img src={ex2} alt="Exemplo2" />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={ex3} alt="" />
+            <img src={ex3} alt="Exemplo3" />
         </SwiperSlide>
         <SwiperSlide>
-            <img src={ex4} alt="" />
+            <img src={ex4} alt="Exemplo4" />
         </SwiperSlide>
       </Swiper>
     </>

@@ -1,60 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from 'react-router-dom';
-
-
-// imagens
 
 import logoHeader from '/Logo3.png'
 
 export default function Header() {
     return (
         <header className="Header">
-            <HamburgerMenu  imglogo={logoHeader} />
+            <nav>
+              <div>
+                  <img src={logoHeader} alt="Logo do restaurante" className="imgLogo" />
+              </div>
+              <ul className='list'>
+                  <a href="#pedido"><li className='itens'>Pedido</li></a>
+                  <a href="#reserva"><li className='itens'>Reserva</li></a>
+                  <Link to={"/Cardapio"}><li className='itens'>Cardapio</li></Link>
+                  <Link to={'/login'}><li className='itens'>Login</li></Link>
+              </ul>
+          </nav>
         </header>
     )
 }
 
-const HamburgerMenu = ({imglogo}) => {
-  const [isOpen, setIsOpen] = useState(true);
-  const [showButton, setShowButton] = useState(true);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    };
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  return (
-    <div>
-      {showButton && (
-        <div className='HamburgerMenu' onClick={() => setIsOpen(!isOpen)}>
-          <AiOutlineMenu className='icon' />
-        </div>
-      )}
-      {isOpen && (
-          <nav>
-              <div>
-                  <img src={imglogo} alt="" className="imgLogo" />
-              </div>
-              <ul className='list'>
-                  <li className='itens'><a href="#pedido">Pedido</a></li>
-                  <li className='itens'><Link to="/Cardapio">Cardapio</Link></li>
-                  <li className='itens'><a href="#reserva">Reserva</a></li>
-                  <li className='itens'><Link to={'/login'}><span>Login</span></Link></li>
-                  
-              </ul>
-          </nav>
-      )}
-    </div>
-  );
-}

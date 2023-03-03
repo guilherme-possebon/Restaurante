@@ -7,7 +7,8 @@ import logoFooter from '/Logo4.png'
 
 import './ScssCardapio/Cardapio.scss'
 
-import HeaderCardapio from "./Layout/HeaderCardapio"
+import imgLogo from '/Logo3.png'
+import NavBarCardapio from "./Layout/NavBarCardapio"
 
 
 function Cardapio() {
@@ -16,7 +17,9 @@ function Cardapio() {
     <>
       <div className="MainContainer">
 
-      <HeaderCardapio />
+        <img src={imgLogo} alt="Logo do restaurante" className='imgLogo' />
+        <h1>Cardápio</h1>
+        <NavBarCardapio  />
 
       <section id="Entrada">
       <Entrada />
