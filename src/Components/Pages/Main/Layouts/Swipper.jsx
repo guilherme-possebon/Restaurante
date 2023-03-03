@@ -10,17 +10,23 @@ import "swiper/css/pagination";
 import "../Css/Swipper.css";
 
 
-import { Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function MySwipper() {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
+        centeredSlides={true}
+        autoplay={{
+          delay: 10000,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
