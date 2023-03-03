@@ -23,7 +23,7 @@ export default function AboutPlusContact({numero, email, emailHref, facebook, fa
                 
             <div className="Container">
                 <div className="ContainerImgAll ImgAboutContact"></div>
-                    <div className="CotainerList">
+                    <div>
                         <div className="ContainerListChildrenAll">
                             <h2>Contato</h2>
                             <div className="divListParent">

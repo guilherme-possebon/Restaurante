@@ -1,6 +1,6 @@
-import { FaGoogle } from "react-icons/fa";
-import "./Scss/SignIn.scss"
+import "../Layout/ScssLayout/SignIn.scss"
 
+import { FaGoogle } from "react-icons/fa";
 import { GoogleAuthProvider, signInWithPopup} from "firebase/auth"
 import { auth } from "../../../../services/firebase";
 

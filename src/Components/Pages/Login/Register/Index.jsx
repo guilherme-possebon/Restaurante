@@ -1,12 +1,12 @@
-import "../Scss/pages.scss"
-import "../../Layout/scss/LayoutLogin.scss"
+import "../Layout/ScssLayout/SignIn.scss"
+import "../Layout/ScssLayout/LayoutLogin.scss"
 
-import Signin from "../../Layout/Signin";
+import Signin from "../Layout/Signin";
 
 import { Link } from "react-router-dom"
 import { useState } from "react";
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { auth } from "../../../../../services/firebase";
+import { auth } from "../../../../services/firebase";
 
 export default function Register() {
     const [email, setEmail] = useState('');

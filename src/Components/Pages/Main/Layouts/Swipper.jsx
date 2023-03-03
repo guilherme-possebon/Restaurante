@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 import ex1 from '/exemplo1.jpg'
 import ex2 from '/exemplo2.jpg'
@@ -7,10 +8,7 @@ import ex4 from '/exemplo4.jpg'
 
 import "swiper/css";
 import "swiper/css/pagination";
-import "../Css/Swipper.css";
-
-
-import { Autoplay, Pagination, Navigation } from "swiper";
+import "../Scss/Swipper.scss";
 
 export default function MySwipper() {
   return (

@@ -5,7 +5,7 @@ import Bebidas from "./Pages/Bebidas"
 import Footer from '../Main/Layouts/Footer'
 import logoFooter from '/Logo4.png'
 
-import './Css/Cardapio.css'
+import './ScssCardapio/Cardapio.scss'
 
 import HeaderCardapio from "./Layout/HeaderCardapio"
 

@@ -1,32 +1,36 @@
-import "./Scss/LayoutLogin.scss"
+import "./Layout/ScssLayout/SignIn.scss"
+import "./Layout/ScssLayout/LayoutLogin.scss"
 
-import Signin from './Signin'
+import Signin from "./Layout/Signin";
 
 import { Link } from "react-router-dom"
 import { useState } from "react";
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { auth } from "../services/firebaseConfig";
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { auth } from "../../../services/firebase";
 
-export default function LayoutLogin({pageName, Conta, Forgot, linkto}) {
-    
+
+export default function Login() {
+
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const [createUserWithEmailAndPassword, user, loading, error,] = useCreateUserWithEmailAndPassword(auth);
+    const [signInWithEmailAndPassword, user, loading, error, ] = useSignInWithEmailAndPassword(auth);
 
     function HandleSingIn(e) {
         e.preventDefault();
-        createUserWithEmailAndPassword(email, password)
+        signInWithEmailAndPassword(email, password)
     }
 
     if (loading) {
         return <p>Carregando...</p>;
     }
+    
+    
     return (
-        <section>
+        <section className="Login">
             <div className="box">
                 <form>
-                    <h2>{pageName}</h2>
+                    <h2>Login</h2>
                     <div className="inputBox">
                         <input type="email" required="requered" onChange={(e) => setEmail(e.target.value)} />
                         <span>E-mail</span>
@@ -38,11 +42,11 @@ export default function LayoutLogin({pageName, Conta, Forgot, linkto}) {
                         <i></i>
                     </div>
                     <div className="links">
-                        <Link to={"#"}>{Forgot}</Link>
-                        <Link to={linkto}>{Conta}</Link>
+                        <Link to={'#'}>Esqueceu a senha ?</Link>
+                        <Link to={'/register'}>Criar conta</Link>
                     </div>
                     <div>
-                        <input type="submit" value={pageName} onClick={HandleSingIn} />
+                        <input type="submit" value={'Entrar na conta'} onClick={HandleSingIn} />
                         <Signin />
                     </div>
                 </form>

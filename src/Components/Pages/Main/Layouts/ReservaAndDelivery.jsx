@@ -6,7 +6,7 @@ export default function ReservaAndDelivery() {
         <div>
             
             <section className='Container'  id='pedido' >
-                    <div className="CotainerListAll">
+                    <div>
                             <div className='ContainerListChildrenAll'>
                         <h1>Pedido</h1>
                                 <div className='text'>Faça seu pedido que levaremos até a sua residência</div>
@@ -27,7 +27,7 @@ export default function ReservaAndDelivery() {
                                     <div><button className='btnRD'>Fazer reserva</button></div>
                                 </div>
                         </div>
-            </section>
+            </section>  
 
             <hr />
 
