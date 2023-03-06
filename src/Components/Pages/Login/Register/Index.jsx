@@ -1,9 +1,9 @@
-import "../Layout/ScssLayout/SignIn.scss"
-import "../Layout/ScssLayout/LayoutLogin.scss"
 
-import Signin from "../Layout/Signin";
+import "../LayoutLogin.scss"
 
-import { Link } from "react-router-dom"
+
+
+import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react";
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from "../../../../services/firebase";
@@ -12,16 +12,16 @@ export default function Register() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const [createUserWithEmailAndPassword, user, loading, error,] = useCreateUserWithEmailAndPassword(auth);
+    const navigate = useNavigate()
+
+    const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(auth);
 
     function HandleSingUp(e) {
         e.preventDefault();
         createUserWithEmailAndPassword(email, password)
+        navigate("/")
     }
 
-    if (loading) {
-        return <p>Carregando...</p>;
-    }
     
     return (
         <section className="Register">
@@ -43,7 +43,7 @@ export default function Register() {
                     </div>
                     <div>
                         <input type="submit" value={'Criar conta'} onClick={HandleSingUp} />
-                        <Signin />
+                        
                     </div>
                 </form>
             </div>

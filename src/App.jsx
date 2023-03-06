@@ -13,9 +13,9 @@ function App() {
 
   useEffect(() => {
     onAuthStateChanged(auth, (data) => {
+      
     })
 })
-
 
   return (
     <>
