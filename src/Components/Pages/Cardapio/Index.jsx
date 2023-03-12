@@ -3,7 +3,6 @@ import Porcao from "./Pages/Porcao"
 import Pratos from "./Pages/Pratos"
 import Bebidas from "./Pages/Bebidas"
 import Footer from '../Main/Layouts/Footer'
-import logoFooter from '/Logo4.png'
 
 import './ScssCardapio/Cardapio.scss'
 

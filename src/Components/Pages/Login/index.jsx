@@ -2,9 +2,11 @@
 import "./LayoutLogin.scss"
 
 import { Link, useNavigate } from "react-router-dom"
-import { useState } from "react";
+import { useState} from "react";
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { auth } from "../../../services/firebase";
+import { onAuthStateChanged } from "firebase/auth"
+import VoltarButton from "./Layouts/VoltarButton";
 
 
 export default function Login() {
@@ -14,19 +16,28 @@ export default function Login() {
 
     const navigate = useNavigate()
 
-    const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
+    const [signInWithEmailAndPassword, error] = useSignInWithEmailAndPassword(auth);
 
     function HandleSingIn(e) {
+        
         e.preventDefault();
+
         signInWithEmailAndPassword(email, password)
-        navigate("/")
+
+        console.log( error )
+
+        onAuthStateChanged(auth, (data) => {
+            if(data != null) {
+              return navigate('/')
+            }
+          })
     }
 
-    
-    
+
     return (
         <section className="Login">
             <div className="box">
+                <VoltarButton />
                 <form>
                     <h2>Login</h2>
                     <div className="inputBox">
@@ -40,7 +51,7 @@ export default function Login() {
                         <i></i>
                     </div>
                     <div className="links">
-                        <Link to={'#'}>Esqueceu a senha ?</Link>
+                        <Link to={'#'}>Esqueceu a senha?</Link>
                         <Link to={'/register'}>Criar conta</Link>
                     </div>
                     <div>
