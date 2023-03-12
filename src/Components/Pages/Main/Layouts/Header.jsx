@@ -1,10 +1,18 @@
+import { useState, useEffect } from 'react';
+import { auth } from '../../../../services/firebase';
+import { onAuthStateChanged } from "firebase/auth" 
 import { Link } from 'react-router-dom';
+
 
 import logoHeader from '/Logo3.png'
 
 export default function Header() {
 
+    const [isLoged, setIsLoged] = useState(false)
     
+
+    
+
     return (
         <header className="Header">
             <nav>
