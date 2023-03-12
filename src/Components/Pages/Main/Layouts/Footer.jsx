@@ -10,8 +10,8 @@ export default function Footer({imglogo}) {
                     <div className='column'>
                         <div className='logo'><img src={imglogo} alt="" className="imgLogo" /></div>
                         <div className='socialMedia'>
-                            <a href="#"><FaInstagram/></a> 
-                            <a href="#"><FaFacebookF /></a>
+                            <a href="#" target={"_blank"}><FaInstagram/></a> 
+                            <a href="#" target={"_blank"}><FaFacebookF /></a>
                         </div>
                     </div>
                     <div>

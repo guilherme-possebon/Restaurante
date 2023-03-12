@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter  } from "react-router-dom";
 import { auth } from "./services/firebase";
 import { onAuthStateChanged } from "firebase/auth" 
 import { useEffect } from "react";
@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     onAuthStateChanged(auth, (data) => {
-      
+
     })
 })
 
