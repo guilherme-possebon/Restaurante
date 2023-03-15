@@ -16,7 +16,7 @@
 
 .imgLogo {
     max-width: 200px;
-    margin: 1.5em 0;
+    max-height: 21px;
 }
 
 
@@ -123,18 +123,13 @@
 
 
 .Header {
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.92);
+    display: grid;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
+    padding: 2em 0;
 
     nav {
-        max-width: 820px;
-        width: 100vw;
         display: flex;
         justify-content: center;
-        padding: 1em;
 
         div {
             margin: auto;
@@ -155,46 +150,13 @@
             display: flex;
             justify-content: space-around;
 
-            .itens {
-                background-color: rgb(53, 53, 53);
-                border-radius: 10px;
-                cursor: pointer;
-                padding: 7px;
-            }
-
             a {
+                color: black;
                 text-decoration: none;
-                color: white;
-               
             }
-        }
-    }
-
-
-    .HamburgerMenu {
-        background-color: rgba(20, 19, 19, 0.92);
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .icon {
-            color: white;
         }
     }
 }
-
-
-
-
-
-
-
-
-
 
 /*----------------------------------------------------------------------*/
 /* Footer */
