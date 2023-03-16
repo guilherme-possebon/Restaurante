@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { auth } from '../../../../services/firebase';
 import { onAuthStateChanged } from 'firebase/auth';
+import { FaUserAlt } from 'react-icons/fa';
 
 
 import logoHeader from '/Logo3.png'
@@ -21,23 +22,25 @@ export default function Header() {
 
     return (
         <header className="Header">
-                <div>
-                    <img src={logoHeader} alt="Logo do restaurante" className="imgLogo" />
-                </div>
-                <nav>
-                    <ul className='list'>
-                        <li className='itens'><a href="#pedido">Pedido</a></li>
-                        <li className='itens'><a href="#reserva">Reserva</a></li>
-                        <li className='itens'><Link to={"/Cardapio"}>Cardapio</Link></li>
-                    </ul>
-                </nav>
-                <div>
-                    {isLoged && (
-                    <button>{auth.currentUser.displayName}</button>)}
-                    {!isLoged && (
-                    <Link to={'/login'}><button className='itens'>Login</button></Link>
-                    )}
-                </div>
+               
+                    <div className="HeaderContainer">
+                        <div className='DivLogo'><img src={logoHeader} alt="Logo do restaurante" className="imgLogo" /></div>
+                        <nav>
+                            <ul className='list'>
+                                <li className='itens'><Link to={"/Cardapio"}>Cardapio</Link></li>
+                                <li className='itens'><a href="#pedido">Pedido</a></li>
+                                <li className='itens'><a href="#reserva">Reserva</a></li>
+                            </ul>
+                        </nav>
+                        <div className='UserAndLoginButton'>
+                            {isLoged && (
+                            <span><FaUserAlt/><p>{auth.currentUser.displayName}</p></span>)}
+                            {!isLoged && (
+                            <Link to={'/login'}>Login</Link>
+                            )}
+                        </div>
+                    </div>
+                
         </header>
     )
 }
