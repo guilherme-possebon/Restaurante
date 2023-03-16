@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     onAuthStateChanged(auth, (data) => {
-      console.log( data )
+
     })
 })
 
@@ -34,4 +34,4 @@ function App() {
 
 export default App
 
-
+// TODO npm run build && firebase deploy --only hosting
