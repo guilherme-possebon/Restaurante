@@ -1,29 +1,19 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { auth } from '../../../../services/firebase';
-import { onAuthStateChanged } from 'firebase/auth';
-import { FaUserAlt } from 'react-icons/fa';
 
 
 import logoHeader from '/Logo3.png'
+import UserLoginButton from '../Layouts/UserLoginButton';
 
 export default function Header() {
 
-    const [isLoged, setIsLoged] = useState(false)
-    
-    useEffect(() => {
-        onAuthStateChanged(auth, (data) => {
-        if(data != null) {
-            return setIsLoged(true)
-        }
-        })
-    })
+
   
 
     return (
         <header className="Header">
                
                     <div className="HeaderContainer">
+                        <UserLoginButton />
                         <div className='DivLogo'><img src={logoHeader} alt="Logo do restaurante" className="imgLogo" /></div>
                         <nav>
                             <ul className='list'>
@@ -32,13 +22,6 @@ export default function Header() {
                                 <li className='itens'><a href="#reserva">Reserva</a></li>
                             </ul>
                         </nav>
-                        <div className='UserAndLoginButton'>
-                            {isLoged && (
-                            <span><FaUserAlt/><p>{auth.currentUser.displayName}</p></span>)}
-                            {!isLoged && (
-                            <Link to={'/login'}>Login</Link>
-                            )}
-                        </div>
                     </div>
                 
         </header>

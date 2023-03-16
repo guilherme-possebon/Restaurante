@@ -2,7 +2,7 @@ import Entrada from "./Pages/Entrada"
 import Porcao from "./Pages/Porcao"
 import Pratos from "./Pages/Pratos"
 import Bebidas from "./Pages/Bebidas"
-import Footer from '../Main/Layouts/Footer'
+import Footer from '../Main/Pages/Footer'
 
 import './ScssCardapio/Cardapio.scss'
 
