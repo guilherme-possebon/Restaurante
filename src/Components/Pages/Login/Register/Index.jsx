@@ -41,7 +41,7 @@ export default function Register() {
                 <form>
                     <h2>Criar conta</h2>
                     <div className="inputBox">
-                        <input type="text" required="requered" onChange={(e) => setUsername(e.target.value)}  value={username} />
+                        <input type="text" required="requered" maxLength={10} onChange={(e) => setUsername(e.target.value)}  value={username} />
                         <span>Nome de usuario</span>
                         <i></i>
                     </div>
