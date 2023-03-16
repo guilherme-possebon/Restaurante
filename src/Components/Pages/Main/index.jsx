@@ -1,10 +1,10 @@
 import MySwipper from './Layouts/Swipper'
-import Header from './Layouts/Header'
-import Footer from './Layouts/Footer'
-import Contact from './Layouts/Contact'
-import About from './Layouts/About'
-import Pedido from './Layouts/Pedido'
-import Reserva from './Layouts/Reserva'
+import Header from './Pages/Header'
+import Footer from './Pages/Footer'
+import Contact from './Pages/Contact'
+import About from './Pages/About'
+import Pedido from './Pages/Pedido'
+import Reserva from './Pages/Reserva'
 
 import logoFooter from '/Logo4.png'
 import "./Scss/Main.scss"
