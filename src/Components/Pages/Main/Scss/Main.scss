@@ -15,8 +15,8 @@
 }
 
 .imgLogo {
-    max-width: 200px;
-    max-height: 21px;
+    width: 160px;
+    
 }
 
 
@@ -24,7 +24,7 @@
 /* Para about, contact, reserva e delivery */
 /*----------------------------------------------------------------------*/
 
-
+// TODO separar em outro arquivo
 .Container {
     display: flex;
     justify-content: center;
@@ -61,7 +61,7 @@
 /* AboutPlusContact */
 /*----------------------------------------------------------------------*/
 
-
+// TODO separar em outro arquivo
 .ImgAboutContact {
     background-image: url("/exemplo3.jpg");
     background-position: top center;
@@ -91,7 +91,7 @@
 /*----------------------------------------------------------------------*/
 
 
-.imgReserva {
+.imgReserva { // TODO separar por arquivo
     background-image: url('/reserva.jpg');
     background-size: cover;
 }
@@ -121,22 +121,63 @@
 /* Header Principal */
 /*----------------------------------------------------------------------*/
 
+@media screen and (max-width: 550px ) {
+    .HeaderContainer {
+        flex-direction: column;
+        align-items: center;
 
-.Header {
-    display: grid;
-    width: 100%;
-    padding: 2em 0;
-
-    nav {
-        display: flex;
-        justify-content: center;
-
-        div {
-            margin: auto;
-            text-align: center;
-            margin-bottom: 20px;
+        .DivLogo {
+            margin-top: 1.4em;
         }
 
+        nav {
+            margin-top: 2em;
+        }
+
+        .UserAndLoginButton {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: .4em;
+        }
+    }
+}
+
+
+.Header {
+    display: flex;
+    padding: 2em .5em;
+    justify-content: center;
+    
+    
+    .HeaderContainer {
+        max-width: 1400px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .UserAndLoginButton  {
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        span {
+            display: flex;
+            align-items: center;
+
+                svg {
+                    margin-right: 5px;
+                }
+        }
+    }
+
+
+        
+    nav {
+
+        
         .list {
             display: flex;
             flex-wrap: wrap;
@@ -144,17 +185,18 @@
             list-style: none;
             color: white;
             justify-content: center;
-        }
-        ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
+
+            .itens {
+                border-bottom: 1px solid black;
+            }
 
             a {
                 color: black;
                 text-decoration: none;
             }
         }
+
+
     }
 }
 
@@ -162,7 +204,7 @@
 /* Footer */
 /*----------------------------------------------------------------------*/
 
-footer {
+footer { // TODO Por em arquivos separados
     background-color: rgb(193, 110, 59);    
 }
 .containerFooter {
