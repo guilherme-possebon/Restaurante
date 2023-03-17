@@ -2,7 +2,6 @@
 /* Geral */
 /*----------------------------------------------------------------------*/
 
-
 * {
     margin: 0px;
     padding: 0px;
@@ -16,7 +15,6 @@
 
 .imgLogo {
     width: 160px;
-    
 }
 
 a {
@@ -24,12 +22,53 @@ a {
     color: black;
 }
 
+/*----------------------------------------------------------------------*/
+/* Header Principal */
+/*----------------------------------------------------------------------*/
+
+.Header {
+    display: flex;
+    padding: 0 .5em .5em .5em;
+    justify-content: center;
+        
+    .HeaderContainer {
+        max-width: 1400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav {
+        margin-top: 2em;
+        
+        
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5em;
+            list-style: none;
+            color: white;
+            justify-content: center;
+            
+            .itens {
+                border-bottom: 1px solid black;
+            }
+            
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+        
+        
+    }
+}
 
 /*----------------------------------------------------------------------*/
 /* Para about, contact, reserva e delivery */
 /*----------------------------------------------------------------------*/
 
-// TODO separar em outro arquivo
 .Container {
     display: flex;
     justify-content: center;
@@ -60,158 +99,6 @@ a {
     height: 560px;
 }   
 
-
-
-/*----------------------------------------------------------------------*/
-/* AboutPlusContact */
-/*----------------------------------------------------------------------*/
-
-// TODO separar em outro arquivo
-.ImgAboutContact {
-    background-image: url("/exemplo3.jpg");
-    background-position: top center;
-    background-attachment: fixed;
-}
-.divListParent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    list-style: none;
-    margin: 2em;
-    text-align: center;
-
-    div {
-        padding: 1em;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-}
-
-
-/*----------------------------------------------------------------------*/
-/* ReservaAndDelivery */
-/*----------------------------------------------------------------------*/
-
-
-.imgReserva { // TODO separar por arquivo
-    background-image: url('/reserva.jpg');
-    background-size: cover;
-}
-.imgEntrega {
-    background-image: url('/delivery.jpg');
-    background-size: cover;
-}
-.text {
-    padding: 3em 1em;
-}
-.btnRD {
-    margin: 2em 0;
-    color: #fff;
-    background-color: #997d34d1;
-    padding: 10px 15px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    cursor: pointer;
-}
-.espaco {
-    margin-bottom: 2em;
-}
-
-
-/*----------------------------------------------------------------------*/
-/* Header Principal */
-/*----------------------------------------------------------------------*/
-
-.Header {
-    display: flex;
-    padding: 0 .5em .5em .5em;
-    justify-content: center;
-    
-    .DivLogo {
-        margin-top: 3em;
-    }
-    
-    .HeaderContainer {
-        max-width: 1400px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-            
-    nav {
-        margin-top: 2em;
-
-        
-        .list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5em;
-            list-style: none;
-            color: white;
-            justify-content: center;
-
-            .itens {
-                border-bottom: 1px solid black;
-            }
-
-            a {
-                color: black;
-                text-decoration: none;
-            }
-        }
-
-
-    }
-}
-
-/*----------------------------------------------------------------------*/
-/* Footer */
-/*----------------------------------------------------------------------*/
-
-footer { // TODO Por em arquivos separados
-    background-color: rgb(193, 110, 59);    
-}
-.containerFooter {
-    padding: 5em 0;
-}
-.footerWrapper {   
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 300px;
-}
-.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly
-}
-.logo {
-    padding-bottom: 20px;
-}
-.socialMedia {
-    font-size: 1.4em;
-
-    a {
-        color: black;
-    }
-}
-.footerList {
-    list-style: none;
-
-    li {
-        padding-bottom: 1em;
-    }
-}
-
-
 /*----------------------------------------------------------------------*/
 /* Media Query */
 /*----------------------------------------------------------------------*/
@@ -233,5 +120,16 @@ footer { // TODO Por em arquivos separados
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 470px ) {
+    .DivLogo {
+        margin-top: 2em;
+    }
+}
+@media screen and (max-width: 470px ) {
+    .DivLogo {
+        margin-top: 4.4em;
     }
 }

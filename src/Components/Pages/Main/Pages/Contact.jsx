@@ -1,4 +1,6 @@
 import { FaPhoneAlt, FaRegEnvelope, FaFacebook, FaInstagram } from "react-icons/fa";
+import "../Scss/AboutContact.scss"
+
 
 export default function Contact({numero, email, emailHref, facebook, facebookHref, instagram, instagramHref}) {
     return (

@@ -1,4 +1,4 @@
-
+import "../Scss/Footer.scss"
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 

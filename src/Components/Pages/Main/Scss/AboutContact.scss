@@ -1,0 +1,22 @@
+.ImgAboutContact {
+    background-image: url("/exemplo3.jpg");
+    background-position: top center;
+    background-attachment: fixed;
+}
+.divListParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    margin: 2em;
+    text-align: center;
+
+    div {
+        padding: 1em;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}

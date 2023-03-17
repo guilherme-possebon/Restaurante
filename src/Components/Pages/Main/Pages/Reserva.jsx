@@ -1,3 +1,5 @@
+import "../Scss/ReservaPedido.scss"
+
 export default function Reserva() {
     return (
         <section className='Container espaco'  id="reserva" >
