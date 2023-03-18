@@ -7,8 +7,6 @@ import UserLoginButton from '../Layouts/UserLoginButton';
 export default function Header() {
 
 
-  
-
     return (
         <header className="Header">
                

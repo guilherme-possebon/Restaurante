@@ -1,4 +1,3 @@
-
 import "./LayoutLogin.scss"
 
 import { Link, useNavigate } from "react-router-dom"
@@ -9,8 +8,6 @@ import { onAuthStateChanged } from "firebase/auth"
 
 
 import VoltarButton from "./Layouts/VoltarButton";
-
-
 
 export default function Login() {
 

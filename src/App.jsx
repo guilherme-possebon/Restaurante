@@ -1,7 +1,4 @@
 import { Route, Routes, BrowserRouter  } from "react-router-dom";
-import { auth } from "./services/firebase";
-import { onAuthStateChanged } from "firebase/auth" 
-import { useEffect } from "react";
 
 import MainContent from './Components/Pages/Main/index'
 import Cardapio from './Components/Pages/Cardapio/Index';
@@ -10,12 +7,6 @@ import Register from "./Components/Pages/Login/Register/Index"
 
 
 function App() {
-
-  useEffect(() => {
-    onAuthStateChanged(auth, (data) => {
-
-    })
-})
 
   return (
     <>
