@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import "../Scss/ReservaPedido.scss"
+import "./Scss/ReservaPedido.scss"
 
 export default function Pedido() {
     return (

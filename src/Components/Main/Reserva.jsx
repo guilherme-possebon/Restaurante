@@ -1,4 +1,4 @@
-import "../Scss/ReservaPedido.scss"
+import "./Scss/ReservaPedido.scss"
 
 export default function Reserva() {
     return (

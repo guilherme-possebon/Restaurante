@@ -3,11 +3,11 @@ import "./LayoutLogin.scss"
 import { Link, useNavigate } from "react-router-dom"
 import { useState} from "react";
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { auth } from "../../../services/firebase";
+import { auth } from "../../services/firebase";
 import { onAuthStateChanged } from "firebase/auth"
 
 
-import VoltarButton from "./Layouts/VoltarButton";
+import VoltarButton from "./VoltarButton";
 
 export default function Login() {
 

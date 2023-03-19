@@ -1,4 +1,4 @@
-import "../Scss/AboutContact.scss"
+import "./Scss/AboutContact.scss"
 
 export default function About() {
     return (

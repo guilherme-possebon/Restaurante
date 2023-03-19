@@ -5,7 +5,6 @@ export default function NavBarCardapio() {
     return (
             <div className="sticky">
                 <nav className='opcao'>
-                    <div>
                         <ul>
                             <a href="#Entrada" className='itens'  >
                                 <li>
@@ -33,7 +32,6 @@ export default function NavBarCardapio() {
                                 </li>
                             </Link>
                         </ul>
-                    </div>
                 </nav>
             </div>
     )

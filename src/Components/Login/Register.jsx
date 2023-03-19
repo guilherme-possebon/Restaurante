@@ -1,10 +1,10 @@
-import "../LayoutLogin.scss"
+import "./LayoutLogin.scss"
 
 import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react";
 import { useCreateUserWithEmailAndPassword, useUpdateProfile} from 'react-firebase-hooks/auth';
-import { auth } from "../../../../services/firebase";
-import VoltarButton from "../Layouts/VoltarButton";
+import { auth } from "../../services/firebase";
+import VoltarButton from "./VoltarButton";
 
 export default function Register() {
     const [email, setEmail] = useState('');

@@ -1,9 +1,9 @@
 import { Route, Routes, BrowserRouter  } from "react-router-dom";
 
-import MainContent from './Components/Pages/Main/index'
-import Cardapio from './Components/Pages/Cardapio/Index';
-import Login from "./Components/Pages/Login/index"
-import Register from "./Components/Pages/Login/Register/Index"
+import MainContent from './Components/Main/Main'
+import Cardapio from './Components/Cardapio/Cardapio';
+import Login from "./Components/Login/Login"
+import Register from "./Components/Login/Register"
 
 
 function App() {

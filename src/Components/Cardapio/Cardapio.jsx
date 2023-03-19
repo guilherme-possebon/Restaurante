@@ -1,8 +1,8 @@
-import Entrada from "./Pages/Entrada"
-import Porcao from "./Pages/Porcao"
-import Pratos from "./Pages/Pratos"
-import Bebidas from "./Pages/Bebidas"
-import Footer from '../Main/Pages/Footer'
+import Entrada from "./Components/Entrada"
+import Porcao from "./Components/Porcao"
+import Pratos from "./Components/Pratos"
+import Bebidas from "./Components/Bebidas"
+import Footer from '../Main/Footer'
 
 import './ScssCardapio/Cardapio.scss'
 
