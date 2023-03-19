@@ -36,33 +36,40 @@ export default function Register() {
     
     return (
         <section className="Register">
-            <div className="box" style={{height: 510}}>
-                <VoltarButton />
-                <form>
-                    <h2>Criar conta</h2>
-                    <div className="inputBox">
-                        <input type="text" required="requered" maxLength={10} onChange={(e) => setUsername(e.target.value)}  value={username} />
-                        <span>Nome de usuario</span>
-                        <i></i>
+            <div className="container">
+                <div className="box" style={{height: 510}}>
+                    <VoltarButton />
+                    <form className="backgroundLoginpage">
+                        <h2>Criar conta</h2>
+                        <div className="inputBox">
+                            <input type="text" required="requered" maxLength={10} onChange={(e) => setUsername(e.target.value)}  value={username} />
+                            <span>Nome de usuario</span>
+                            <i></i>
+                        </div>
+                        <div className="inputBox">
+                            <input type="email" required="requered" onChange={(e) => setEmail(e.target.value)}  value={email} />
+                            <span>E-mail</span>
+                            <i></i>
+                        </div>
+                        <div className="inputBox">
+                            <input type="password" required="requered" onChange={(e) => setPassword(e.target.value)} value={password} />
+                            <span>Senha</span>
+                            <i></i>
+                        </div>
+                        <div className="links">
+                            <Link to={'/login'}>Entrar na conta</Link>
+                        </div>
+                        <div>
+                            <input type="submit" value={'Criar conta'} onClick={handleSignUp} />
+                
+                        </div>
+                    </form>
+                </div>
+                <div className="box" style={{height: 510}}>
+                    <div className="backgroundLoginpage">
+                        {/* TODO Fazer os botões em um componente separado e por aqui e estilizar os botões em um scss separado */}
                     </div>
-                    <div className="inputBox">
-                        <input type="email" required="requered" onChange={(e) => setEmail(e.target.value)}  value={email} />
-                        <span>E-mail</span>
-                        <i></i>
-                    </div>
-                    <div className="inputBox">
-                        <input type="password" required="requered" onChange={(e) => setPassword(e.target.value)} value={password} />
-                        <span>Senha</span>
-                        <i></i>
-                    </div>
-                    <div className="links">
-                        <Link to={'/login'}>Entrar na conta</Link>
-                    </div>
-                    <div>
-                        <input type="submit" value={'Criar conta'} onClick={handleSignUp} />
-                        
-                    </div>
-                </form>
+                </div>
             </div>
         </section>
     )

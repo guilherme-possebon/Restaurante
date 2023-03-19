@@ -60,7 +60,7 @@ export default function UserLoginButton() {
                 <div className='PopUpContainer blur'>
                         <div className='PopUp' ref={popupRef}>
                             <div className='UserInfo'>
-                                <p className='teste'>Usuário: {auth.currentUser.displayName}</p>
+                                <p>Usuário: {auth.currentUser.displayName}</p>
                                 <p className='email'>Email: <input type="email" id="emailuser" defaultValue={auth.currentUser.email} disabled /></p>
                             </div>
                             <div className="Buttons">
@@ -69,10 +69,10 @@ export default function UserLoginButton() {
                                     window.location.reload();
                                 }
                                 }} className="Button"><HiArrowRightOnRectangle/> Desconectar</button>
-                                <button className='Button'>Trocar senha</button>
-                                <button className='Button'>Trocar email</button>
+                                <button className='Button'>Trocar senha</button> {/* TODO Por o sistema de trocar senha + uma pagina especifica pra isso */}
+                                <button className='Button'>Trocar email</button> {/* TODO Por o sistema de trocar email + uma pagina especifica pra isso */}
                             </div>
-                            <button onClick={tooglePopUp} className="CloseButton Button">Close</button>
+                             <button onClick={tooglePopUp} className="CloseButton Button">Fechar</button> {/* TODO por um icone de "X" */}
                         </div>
                 </div>
                     )}

@@ -36,28 +36,35 @@ export default function Login() {
 
     return (
         <section className="Login">
-            <div className="box">
-                <VoltarButton />
-                <form>
-                    <h2>Login</h2>
-                    <div className="inputBox">
-                        <input type="email" required="requered" onChange={(e) => setEmail(e.target.value)} />
-                        <span>E-mail</span>
-                        <i></i>
+            <div className="container">
+                <div className="box">
+                    <VoltarButton />
+                    <form className="backgroundLoginpage">
+                        <h2>Login</h2>
+                        <div className="inputBox">
+                            <input type="email" required="requered" onChange={(e) => setEmail(e.target.value)} />
+                            <span>E-mail</span>
+                            <i></i>
+                        </div>
+                        <div className="inputBox">
+                            <input type="password" required="requered" onChange={(e) => setPassword(e.target.value)} />
+                            <span>Senha</span>
+                            <i></i>
+                        </div>
+                        <div className="links">
+                            <Link to={'#'}>Esqueceu a senha?</Link>
+                            <Link to={'/register'}>Criar conta</Link>
+                        </div>
+                        <div>
+                            <input type="submit" value={'Entrar na conta'} onClick={HandleSingIn} />
+                        </div>
+                    </form>
+                </div>
+                <div className="box">
+                    <div className="backgroundLoginpage"> 
+                        {/* TODO Fazer os botões em um componente separado e por aqui e estilizar os botões em um scss separado */}
                     </div>
-                    <div className="inputBox">
-                        <input type="password" required="requered" onChange={(e) => setPassword(e.target.value)} />
-                        <span>Senha</span>
-                        <i></i>
-                    </div>
-                    <div className="links">
-                        <Link to={'#'}>Esqueceu a senha?</Link>
-                        <Link to={'/register'}>Criar conta</Link>
-                    </div>
-                    <div>
-                        <input type="submit" value={'Entrar na conta'} onClick={HandleSingIn} />                        
-                    </div>
-                </form>
+                </div>
             </div>
         </section>
     )
