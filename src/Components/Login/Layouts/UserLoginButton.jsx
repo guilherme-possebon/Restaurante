@@ -3,8 +3,8 @@ import { auth } from '../../../services/firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 import { FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { useSignOut } from 'react-firebase-hooks/auth';
-import { HiArrowRightOnRectangle } from "react-icons/hi2"; 
+import { useSignOut, useSendEmailVerification  } from 'react-firebase-hooks/auth';
+import { GoSignOut } from "react-icons/go";
 
 import "../Scss/UserLoginButton.scss"
 
@@ -17,6 +17,12 @@ export default function UserLoginButton() {
     const popupRef = useRef(null)
 
     const [signOut] = useSignOut(auth);
+    const [sendEmailVerification, sending, error] = useSendEmailVerification(auth);
+
+
+    const EmailVerification = () => {
+
+    }
 
     const tooglePopUp = () => {
         setShowPopUp(!showPopUp)
@@ -41,6 +47,8 @@ export default function UserLoginButton() {
             document.removeEventListener('mousedown', handleClickOutside);
             document.removeEventListener('scroll', handleClickOutside);
           };
+
+
         }, [popupRef]);
 
 
@@ -61,16 +69,22 @@ export default function UserLoginButton() {
                         <div className='PopUp' ref={popupRef}>
                             <div className='UserInfo'>
                                 <p>Usuário: {auth.currentUser.displayName}</p>
-                                <p className='email'>Email: <input type="email" id="emailuser" defaultValue={auth.currentUser.email} disabled /></p>
+                                <p className='email'>E-mail: <input type="email" id="emailuser" defaultValue={auth.currentUser.email} disabled /></p>
+                                <p>{auth.currentUser.emailVerified ? "E-mail verificado!" : "E-mail não verificado!"}</p>
                             </div>
                             <div className="Buttons">
                                 <button onClick={async () => { const sucess = await signOut();
                                 if (sucess) {
                                     window.location.reload();
                                 }
-                                }} className="Button"><HiArrowRightOnRectangle/> Desconectar</button>
-                                <button className='Button'>Trocar senha</button> {/* TODO Por o sistema de trocar senha + uma pagina especifica pra isso */}
-                                <button className='Button'>Trocar email</button> {/* TODO Por o sistema de trocar email + uma pagina especifica pra isso */}
+                                }} className="Button"><GoSignOut/> Desconectar</button>
+                                <button className='Button'>Atualizar usuário</button> {/* TODO Por o sistema de trocar senha + uma pagina especifica pra isso */}
+                                <button className='Button' onClick={async () => {
+                                    const success = await sendEmailVerification();
+                                    if (success) {
+                                        alert('E-mail Enviado com sucesso!');
+                                    }
+                                    }}>Verificar E-mail</button>
                             </div>
                              <button onClick={tooglePopUp} className="CloseButton Button">Fechar</button> {/* TODO por um icone de "X" */}
                         </div>
