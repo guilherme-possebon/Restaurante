@@ -1,7 +1,6 @@
 import { Link, useNavigate } from "react-router-dom"
-import { useState } from "react";
-import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
-
+import { useEffect, useState } from "react";
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth'
 import { auth } from "../../services/firebase";
 import { ApButton, FcButton, GhButton, GoButton } from "./Layouts/Buttons";
 import VoltarButton from "./Layouts/VoltarButton";
@@ -21,18 +20,22 @@ export default function Register() {
     const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(auth);
     const [updateProfile] = useUpdateProfile(auth);
 
+    useEffect(() => {
+        console.log( "Register" )
+    })
+
     const handleSignUp = async (e) => {
-
-        e.preventDefault();
-
+        
+        e.preventDefault(); // Não deixa o form direcionar para outra pagina
+        
         try {
             await createUserWithEmailAndPassword(email, password)
             const success = await updateProfile({ displayName: username });
-              if (success) {
+            if (success) {
                 return navigate('/') + alert(`${username} sua conta foi criada com sucesso `);
-              }
+            }
         }catch(erro) {
-            alert(erro)
+            console.error( erro )
         }
         
     } 
@@ -64,7 +67,6 @@ export default function Register() {
                         </div>
                         <div>
                             <input type="submit" value={'Criar conta'} />
-                
                         </div>
                     </form>
                 </div>

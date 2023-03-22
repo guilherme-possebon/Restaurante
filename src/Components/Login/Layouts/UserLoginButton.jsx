@@ -3,7 +3,7 @@ import { auth } from '../../../services/firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 import { FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { useSignOut, useSendEmailVerification  } from 'react-firebase-hooks/auth';
+import { useSignOut } from 'react-firebase-hooks/auth';
 import { GoSignOut } from "react-icons/go";
 
 import "../Scss/UserLoginButton.scss"
@@ -17,12 +17,6 @@ export default function UserLoginButton() {
     const popupRef = useRef(null)
 
     const [signOut] = useSignOut(auth);
-    const [sendEmailVerification, sending, error] = useSendEmailVerification(auth);
-
-
-    const EmailVerification = () => {
-
-    }
 
     const tooglePopUp = () => {
         setShowPopUp(!showPopUp)
@@ -30,33 +24,50 @@ export default function UserLoginButton() {
     }    
 
     useEffect(() => {
-        onAuthStateChanged(auth, (data) => {
-            if(data != null) {
-                return setIsLoged(true)
+        console.log( "userLoginButton" )
+            onAuthStateChanged(auth, (data) => {
+                console.log( data )
+                if(data != null) {
+                    return setIsLoged(true)
+                }
+            })
+            function handleClickOutside(event) {
+                if (popupRef.current && !popupRef.current.contains(event.target)) {
+                    setShowPopUp(false);
+                }
             }
-        })
-        function handleClickOutside(event) {
-            if (popupRef.current && !popupRef.current.contains(event.target)) {
-                setShowPopUp(false);
-            }
-          }
-      
-          document.addEventListener('mousedown', handleClickOutside);
-          document.addEventListener('scroll', handleClickOutside);
-          return () => {
+        
+            document.addEventListener('mousedown', handleClickOutside);
+            document.addEventListener('scroll', handleClickOutside);
+            return () => {
             document.removeEventListener('mousedown', handleClickOutside);
             document.removeEventListener('scroll', handleClickOutside);
-          };
+            };
 
 
-        }, [popupRef]);
+        }, []);
 
 
     return (
-        <>
+        <>        
             <div className='UserAndLoginButton'>
                 {/* se for "true" o botão de usuario aparece */}
-                {isLoged && (<button onClick={tooglePopUp} className="Button"><FaUserAlt/>{auth.currentUser.displayName}</button>)}
+                {isLoged && (<div>
+                    <button onClick={tooglePopUp} className="Button"><FaUserAlt/>{auth.currentUser.displayName}</button>
+                    <div>
+            {auth.currentUser.emailVerified 
+                ? <div>
+                    <p>Teste Verificado</p>
+                </div>
+
+                : <div>
+                    <p>Teste Desverificado</p>
+                </div>
+            }
+        </div>
+                    </div>
+                
+                )}
 
                 {/* Se for "False" o botão de login aparece */}
                 {!isLoged && (<Link to={'/login'} className="Button">Login</Link>)}
@@ -79,12 +90,7 @@ export default function UserLoginButton() {
                                 }
                                 }} className="Button"><GoSignOut/> Desconectar</button>
                                 <button className='Button'>Atualizar usuário</button> {/* TODO Por o sistema de trocar senha + uma pagina especifica pra isso */}
-                                <button className='Button' onClick={async () => {
-                                    const success = await sendEmailVerification();
-                                    if (success) {
-                                        alert('E-mail Enviado com sucesso!');
-                                    }
-                                    }}>Verificar E-mail</button>
+                                <button className='Button'>Verificar E-mail</button>
                             </div>
                              <button onClick={tooglePopUp} className="CloseButton Button">Fechar</button> {/* TODO por um icone de "X" */}
                         </div>
