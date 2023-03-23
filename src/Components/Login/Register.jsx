@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react";
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth'
 import { auth } from "../../services/firebase";
-import { ApButton, FcButton, GhButton, GoButton } from "./Layouts/Buttons";
+import { ApButton, GhButton, GoButton } from "./Layouts/Buttons";
 import VoltarButton from "./Layouts/VoltarButton";
 
 import "./Scss/LayoutLogin.scss"
@@ -73,7 +73,6 @@ export default function Register() {
                 <p className="Ou">Ou</p>
                 <div className="box" style={{height: 510}}>
                 <div className="backgroundLoginpage"> 
-                        <FcButton />
                         <GhButton />
                         <GoButton />
                         <ApButton />

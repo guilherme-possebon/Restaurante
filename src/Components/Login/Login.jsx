@@ -2,10 +2,9 @@ import { Link, useNavigate } from "react-router-dom"
 import { useState} from "react";
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { onAuthStateChanged } from "firebase/auth"
-import { GoSignIn } from "react-icons/go";
 
 import { auth } from "../../services/firebase";
-import { ApButton, FcButton, GhButton, GoButton } from "./Layouts/Buttons";
+import { ApButton, GhButton, GoButton } from "./Layouts/Buttons";
 import VoltarButton from "./Layouts/VoltarButton";
 
 import "./Scss/LayoutLogin.scss"
@@ -18,7 +17,7 @@ export default function Login() {
 
     const navigate = useNavigate()
 
-    const [signInWithEmailAndPassword, error] = useSignInWithEmailAndPassword(auth);
+    const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
 
     function HandleSingIn(e) {
         
@@ -67,7 +66,6 @@ export default function Login() {
                 <p className="Ou">Ou</p>
                 <div className="box">
                     <div className="backgroundLoginpage"> 
-                        <FcButton />
                         <GhButton />
                         <GoButton />
                         <ApButton />

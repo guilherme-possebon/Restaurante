@@ -3,7 +3,7 @@ import { auth } from '../../../services/firebase';
 import { onAuthStateChanged } from 'firebase/auth';
 import { FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { useSignOut } from 'react-firebase-hooks/auth';
+import { useSignOut, useSendEmailVerification  } from 'react-firebase-hooks/auth';
 import { GoSignOut } from "react-icons/go";
 import { GrClose } from "react-icons/gr";
 
@@ -17,6 +17,8 @@ export default function UserLoginButton() {
     const [showPopUp, setShowPopUp] = useState(false)
     const popupRef = useRef(null)
 
+    const [sendEmailVerification] = useSendEmailVerification(auth);
+
     const [signOut] = useSignOut(auth);
 
     const tooglePopUp = () => {
@@ -27,7 +29,6 @@ export default function UserLoginButton() {
     useEffect(() => {
         console.log( "userLoginButton" )
             onAuthStateChanged(auth, (data) => {
-                console.log( data )
                 if(data != null) {
                     return setIsLoged(true)
                 }
@@ -48,7 +49,6 @@ export default function UserLoginButton() {
 
         }, []);
 
-
     return (
         <>        
             <div className='UserAndLoginButton'>
@@ -57,13 +57,23 @@ export default function UserLoginButton() {
                     <button onClick={tooglePopUp} className="Button"><FaUserAlt/>{auth.currentUser.displayName}</button>
                     <div>
             {auth.currentUser.emailVerified 
-                ? <div>
+                ? 
+
+                <div>
                     <p>Teste Verificado</p>
                 </div>
 
-                : <div>
-                    <p>Teste Desverificado</p>
-                </div>
+                : 
+
+                <>
+                    <button onClick={async () => {const success = await sendEmailVerification();
+                            if (success) {
+                                alert('Sent email');
+                            }
+                        }}>
+                            Verificar E-mail
+                        </button>
+                </>
             }
         </div>
                     </div>
@@ -80,11 +90,10 @@ export default function UserLoginButton() {
                 <div className='PopUpContainer blur'>
                         <div className='PopUp' ref={popupRef}>
                             <div className='UserInfo'>
-                                <p>Usuário: {auth.currentUser.displayName}</p>
-                                <p className='email'>E-mail: <input type="email" id="emailuser" defaultValue={auth.currentUser.email} disabled /></p>
-                                <p>{auth.currentUser.emailVerified ? "E-mail verificado!" : "E-mail não verificado!"}</p>
+                                <p className='overflow'>Usuário: {auth.currentUser.displayName}</p>
+                                <p className='email overflow'>E-mail: {auth.currentUser.email}</p>
                             </div>
-                            <div className="Buttons">
+                            <div className="PopUpButtons">
                                 <button onClick={async () => { const sucess = await signOut();
                                 if (sucess) {
                                     window.location.reload();

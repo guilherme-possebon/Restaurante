@@ -25,4 +25,4 @@ function App() {
 
 export default App
 
-// TODO npm run build && firebase deploy --only hosting
+// npm run build && firebase deploy --only hosting
