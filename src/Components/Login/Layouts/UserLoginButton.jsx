@@ -68,7 +68,7 @@ export default function UserLoginButton() {
                 <>
                     <button onClick={async () => {const success = await sendEmailVerification();
                             if (success) {
-                                alert('Sent email');
+                                alert('E-mail enviado');
                             }
                         }}>
                             Verificar E-mail

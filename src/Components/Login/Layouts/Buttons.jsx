@@ -30,8 +30,6 @@ export function GhButton() {
     const [signInWithGithub, user] = useSignInWithGithub(auth);
     const navigate = useNavigate()
 
-    console.log( user )
-
     if(user != undefined) {
         setTimeout(() => {
             return navigate('/')
@@ -42,16 +40,6 @@ export function GhButton() {
         <div className="BrandButtons">
             <button className="Button" onClick={() => signInWithGithub()}>
                 <FaGithub /> Entrar com GitHub
-            </button>
-        </div>
-    )
-}
-export function ApButton() {
-    
-    return (
-        <div className="BrandButtons">
-            <button className="Button">
-                <FaApple /> Entrar com Apple
             </button>
         </div>
     )

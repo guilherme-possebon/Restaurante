@@ -4,7 +4,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { onAuthStateChanged } from "firebase/auth"
 
 import { auth } from "../../services/firebase";
-import { ApButton, GhButton, GoButton } from "./Layouts/Buttons";
+import { GhButton, GoButton } from "./Layouts/Buttons";
 import VoltarButton from "./Layouts/VoltarButton";
 
 import "./Scss/LayoutLogin.scss"
@@ -68,7 +68,6 @@ export default function Login() {
                     <div className="backgroundLoginpage"> 
                         <GhButton />
                         <GoButton />
-                        <ApButton />
                     </div>
                 </div>
             </div>
