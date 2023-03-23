@@ -5,6 +5,7 @@ import { FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { useSignOut } from 'react-firebase-hooks/auth';
 import { GoSignOut } from "react-icons/go";
+import { GrClose } from "react-icons/gr";
 
 import "../Scss/UserLoginButton.scss"
 
@@ -89,13 +90,12 @@ export default function UserLoginButton() {
                                     window.location.reload();
                                 }
                                 }} className="Button"><GoSignOut/> Desconectar</button>
-                                <button className='Button'>Atualizar usuário</button> {/* TODO Por o sistema de trocar senha + uma pagina especifica pra isso */}
-                                <button className='Button'>Verificar E-mail</button>
+                                <button className='Button'>Trocar a senha e/ou E-mail</button> {/* TODO Por o sistema de trocar senha + uma pagina especifica pra isso */}
                             </div>
-                             <button onClick={tooglePopUp} className="CloseButton Button">Fechar</button> {/* TODO por um icone de "X" */}
+                             <button onClick={tooglePopUp} className="CloseButton Button"><GrClose/></button> {/* TODO por um icone de "X" */}
                         </div>
                 </div>
-                    )}
+            )}
 
         
         </>
