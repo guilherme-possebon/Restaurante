@@ -1,13 +1,14 @@
-import "./LayoutLogin.scss"
-
 import { Link, useNavigate } from "react-router-dom"
 import { useState} from "react";
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { auth } from "../../services/firebase";
 import { onAuthStateChanged } from "firebase/auth"
 
+import { auth } from "../../services/firebase";
+import { GhButton, GoButton } from "./Layouts/Buttons";
+import VoltarButton from "./Layouts/VoltarButton";
 
-import VoltarButton from "./VoltarButton";
+import "./Scss/LayoutLogin.scss"
+
 
 export default function Login() {
 
@@ -16,7 +17,7 @@ export default function Login() {
 
     const navigate = useNavigate()
 
-    const [signInWithEmailAndPassword, error] = useSignInWithEmailAndPassword(auth);
+    const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
 
     function HandleSingIn(e) {
         
@@ -24,7 +25,7 @@ export default function Login() {
 
         signInWithEmailAndPassword(email, password)
 
-        console.log( error )
+        
 
         onAuthStateChanged(auth, (data) => {
             if(data != null) {
@@ -34,20 +35,22 @@ export default function Login() {
     }
 
 
+
+
     return (
         <section className="Login">
             <div className="container">
                 <div className="box">
                     <VoltarButton />
-                    <form className="backgroundLoginpage">
+                    <form className="backgroundLoginpage" onSubmit={HandleSingIn}>
                         <h2>Login</h2>
                         <div className="inputBox">
-                            <input type="email" required="requered" onChange={(e) => setEmail(e.target.value)} />
+                            <input type="email" required onChange={(e) => setEmail(e.target.value)} />
                             <span>E-mail</span>
                             <i></i>
                         </div>
                         <div className="inputBox">
-                            <input type="password" required="requered" onChange={(e) => setPassword(e.target.value)} />
+                            <input type="password" required onChange={(e) => setPassword(e.target.value)} />
                             <span>Senha</span>
                             <i></i>
                         </div>
@@ -56,13 +59,15 @@ export default function Login() {
                             <Link to={'/register'}>Criar conta</Link>
                         </div>
                         <div>
-                            <input type="submit" value={'Entrar na conta'} onClick={HandleSingIn} />
+                            <input type="submit" value={'Entrar na conta'} />
                         </div>
                     </form>
                 </div>
+                <p className="Ou">Ou</p>
                 <div className="box">
                     <div className="backgroundLoginpage"> 
-                        {/* TODO Fazer os botões em um componente separado e por aqui e estilizar os botões em um scss separado */}
+                        <GhButton />
+                        <GoButton />
                     </div>
                 </div>
             </div>

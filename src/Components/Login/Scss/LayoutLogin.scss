@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-
+@media screen and (min-width: 702px ) {
+    .Login, .Register {
+        background: #23242a;
+    }
+    .container {
+        border-radius: 10px;
+    }
+}
 
 .Login, .Register {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #23242a;
     font-family: 'Poppins', sans-serif;
 }
 .container {
@@ -15,9 +21,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 2em;
-    border-radius: 10px;
 }
+
+.Ou {
+    color: white;
+}
+
 .box {
     position: relative;
     width: 320px;
