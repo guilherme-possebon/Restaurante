@@ -1,8 +1,9 @@
 footer {
     background-color: rgb(193, 110, 59);    
-}
-.containerFooter {
+    width: 100%;
     padding: 5em 0;
+    display: flex;
+    justify-content: center;
 }
 .footerWrapper {   
     display: flex;

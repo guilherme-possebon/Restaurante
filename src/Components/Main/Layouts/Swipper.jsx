@@ -10,6 +10,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../Scss/Swipper.scss";
 
+// TODO Nome da pasta "_swipper.tsx"
+
 export default function MySwipper() {
   return (
     <>

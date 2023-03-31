@@ -1,5 +1,9 @@
 import "./Scss/AboutContact.scss"
 
+// TODO Nome da pasta "_about.tsx"
+// TODO por em uma mesma pasta o contact e o about só que em function diferentes
+
+
 export default function About() {
     return (
         <div className="Container">

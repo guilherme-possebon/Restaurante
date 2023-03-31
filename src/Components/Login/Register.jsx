@@ -1,11 +1,14 @@
 import { Link, useNavigate } from "react-router-dom"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth'
 import { auth } from "../../services/firebase";
 import { GhButton, GoButton } from "./Layouts/Buttons";
 import VoltarButton from "./Layouts/VoltarButton";
 
 import "./Scss/LayoutLogin.scss"
+
+// TODO Nome da pasta "register.tsx"
+// TODO juntar o register com o login para uma utilização menor de imports
 
 
 export default function Register() {
@@ -19,10 +22,6 @@ export default function Register() {
 
     const [createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(auth);
     const [updateProfile] = useUpdateProfile(auth);
-
-    useEffect(() => {
-        console.log( "Register" )
-    })
 
     const handleSignUp = async (e) => {
         

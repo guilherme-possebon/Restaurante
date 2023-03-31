@@ -3,36 +3,40 @@ import { Link } from 'react-router-dom';
 
 export default function NavBarCardapio() {
     return (
-            <div className="sticky">
-                <nav className='opcao'>
-                        <ul>
-                            <a href="#Entrada" className='itens'  >
-                                <li>
-                                    Entrada
-                                </li>
-                            </a>
-                            <a href="#Pratos" className='itens' >
-                                <li>
-                                    Pratos
-                                </li>
-                            </a>
-                            <a href="#Porção" className='itens' >
-                                <li>
-                                    Porção
-                                </li>
-                            </a>
-                            <a href="#Drinks" className='itens' >
-                                <li>
-                                    Bebidas
-                                </li>
-                            </a>
-                            <Link to="/" className="ButtonIcon HeaderButton itens">
-                                <li>
-                                    <FaArrowLeft/>Voltar
-                                </li>
-                            </Link>
-                        </ul>
-                </nav>
-            </div>
+        <div>
+            <nav className='opcao'>
+                <ul>
+                    <li>
+                        <a href="#Entrada" className='itens'  >
+                            Entrada
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#Pratos" className='itens' >
+                            Pratos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#Porção" className='itens' >
+                            Porção
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#Drinks" className='itens' >
+                            Bebidas
+                        </a>
+                    </li>
+
+                    <li>
+                        <Link to="/" className="ButtonIcon itens">
+                        <FaArrowLeft/>Voltar
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     )
 }

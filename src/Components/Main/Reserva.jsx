@@ -1,5 +1,8 @@
 import "./Scss/ReservaPedido.scss"
 
+// TODO Nome da pasta "_reserva.tsx"
+// TODO por em uma mesma pasta o reserva e o pedido só que em function diferentes
+
 export default function Reserva() {
     return (
         <section className='Container espaco'  id="reserva" >

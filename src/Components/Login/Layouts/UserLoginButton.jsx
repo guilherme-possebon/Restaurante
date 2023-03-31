@@ -9,6 +9,8 @@ import { GrClose } from "react-icons/gr";
 
 import "../Scss/UserLoginButton.scss"
 
+// TODO Nome do arquivo "_userInfo.tsx"
+
 
 export default function UserLoginButton() {
 
@@ -84,7 +86,6 @@ export default function UserLoginButton() {
                 {!isLoged && (<Link to={'/login'} className="Button">Login</Link>)}
             </div>
 
-
                 {/* Aqui vai aparecer o PopUp no meio da tela */}
                     {isLoged && showPopUp && (
                 <div className='PopUpContainer blur'>
@@ -101,14 +102,10 @@ export default function UserLoginButton() {
                                 }} className="Button"><GoSignOut/> Desconectar</button>
                                 <button className='Button'>Trocar a senha e/ou E-mail</button> {/* TODO Por o sistema de trocar senha + uma pagina especifica pra isso */}
                             </div>
-                             <button onClick={tooglePopUp} className="CloseButton Button"><GrClose/></button> {/* TODO por um icone de "X" */}
+                             <button onClick={tooglePopUp} className="CloseButton Button"><GrClose/></button>
                         </div>
                 </div>
             )}
-
-        
         </>
-
-
     )
 }

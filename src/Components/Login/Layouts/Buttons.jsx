@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom"
 
 import '../Scss/Buttons.scss'
 
+// TODO Nome do arquivo "_buttons.tsx"
+
 export function GoButton() {
 
     const [signInWithGoogle, user] = useSignInWithGoogle(auth);
@@ -25,6 +27,7 @@ export function GoButton() {
         </div>
     )
 }
+
 export function GhButton() {
 
     const [signInWithGithub, user] = useSignInWithGithub(auth);

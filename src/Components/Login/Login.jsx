@@ -9,6 +9,9 @@ import VoltarButton from "./Layouts/VoltarButton";
 
 import "./Scss/LayoutLogin.scss"
 
+// TODO Nome da pasta "login.tsx"
+// TODO juntar o register com o login para uma utilização menor de imports
+
 
 export default function Login() {
 
@@ -55,7 +58,7 @@ export default function Login() {
                             <i></i>
                         </div>
                         <div className="links">
-                            <Link to={'#'}>Esqueceu a senha?</Link>
+                            {/* TODO  <Link to={'#'}>Esqueceu a senha?</Link> fazer uma pagina só para isso  */}
                             <Link to={'/register'}>Criar conta</Link>
                         </div>
                         <div>

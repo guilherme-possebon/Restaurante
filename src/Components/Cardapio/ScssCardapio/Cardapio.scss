@@ -2,10 +2,6 @@
 /* Nav Bar */
 /*----------------------------------------------------------------------*/
 
-.sticky {
-    position: sticky;
-    top: -25px;
-}
 .opcao {
     margin: 2em 0 0 0;
 
@@ -16,12 +12,14 @@
         list-style: none;
         justify-content: center;
     
-        li {
+        .itens {
             background-color: rgb(102, 70, 17);
             padding: 6px;
             transition: 1s;
             cursor: pointer;
             border-radius: 10px;
+            text-decoration: none;
+            color: white;
         
             &:hover {
                 background-color: rgb(210, 137, 19);
@@ -30,12 +28,6 @@
     }
 }
 
-
-
-.itens {
-    text-decoration: none;
-    color: white;
-}
 
 /*----------------------------------------------------------------------*/
 /* Header cardapio */
@@ -47,7 +39,7 @@
     color: white;   
 }
 .ButtonIcon svg {
-    padding-top: 4px;
+    font-size: 12px;
 }
 
 
@@ -57,11 +49,19 @@
 
 
 .MainContainer {
-    max-width: 1201px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    
+    div {
+        max-width: 1201px;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     img {
         margin: 1em 0;
@@ -82,14 +82,19 @@
     margin: 1em 0;
 }
 
-.img {
+.infos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100px;
 
     img {
         width: 70px;
+    }
+
+    .preco {
+        font-size: .9em;
     }
 }
 .text {
@@ -115,7 +120,6 @@
     flex-direction: column;
     align-items: center;
 }
-
 
 
 /*----------------------------------------------------------------------*/

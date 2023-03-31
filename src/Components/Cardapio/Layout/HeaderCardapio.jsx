@@ -1,6 +1,8 @@
 import imgLogo from '/Logo3.png'
 import NavBarCardapio from "./NavBarCardapio"
 
+// TODO Nome "_headerCardapio.tsx"
+
 export default function HeaderCardapio() {
     return (
             <>

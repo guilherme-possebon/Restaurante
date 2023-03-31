@@ -16,29 +16,33 @@ function Cardapio() {
     <>
       <div className="MainContainer">
 
-        <img src={imgLogo} alt="Logo do restaurante" className='imgLogo' />
-        <h1>Cardápio</h1>
-        <NavBarCardapio  />
+        <div>
 
-      <section id="Entrada">
-      <Entrada />
-      </section>
+          <header>
+            <img src={imgLogo} alt="Logo do restaurante" className='imgLogo' />
+            <h1>Cardápio</h1>
+            <NavBarCardapio  />
+          </header>
 
-      <section id="Pratos">
-      <Pratos />
-      </section>
+          <section id="Entrada">
+          <Entrada />
+          </section>
 
-      <section id="Porção">
-      <Porcao />
-      </section>
+          <section id="Pratos">
+          <Pratos />
+          </section>
 
-      <section id="Drinks">
-      <Bebidas />
-      </section>
+          <section id="Porção">
+          <Porcao />
+          </section>
 
-      <section>
-      <Footer />
-      </section>
+          <section id="Drinks">
+          <Bebidas />
+          </section>
+
+
+        </div>
+          <Footer />
 
       </div>
     </>

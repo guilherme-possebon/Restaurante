@@ -1,6 +1,9 @@
 import { FaPhoneAlt, FaRegEnvelope, FaFacebook, FaInstagram } from "react-icons/fa";
 import "./Scss/AboutContact.scss"
 
+// TODO Nome da pasta "_contact.tsx"
+// TODO por em uma mesma pasta o contact e o about só que em function diferentes
+
 
 export default function Contact({numero, email, emailHref, facebook, facebookHref, instagram, instagramHref}) {
     return (

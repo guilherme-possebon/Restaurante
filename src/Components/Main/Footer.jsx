@@ -2,13 +2,16 @@ import "./Scss/Footer.scss"
 
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 
-export default function Footer({imglogo}) {
+import logoFooter from '/Logo4.png'
+
+// TODO Nome da pasta "_footer.tsx"
+
+export default function Footer() {
     return (
         <footer>
-            <div className='containerFooter'>
                 <div className='footerWrapper'>
                     <div className='column'>
-                        <div className='logo'><img src={imglogo} alt="" className="imgLogo" /></div>
+                        <div className='logo'><img src={logoFooter} alt="" className="imgLogo" /></div>
                         <div className='socialMedia'>
                             <a href="#" target={"_blank"}><FaInstagram/></a> 
                             <a href="#" target={"_blank"}><FaFacebookF /></a>
@@ -25,7 +28,6 @@ export default function Footer({imglogo}) {
                         </ul>
                     </div>
                 </div>
-            </div>
         </footer>
     )
 }
