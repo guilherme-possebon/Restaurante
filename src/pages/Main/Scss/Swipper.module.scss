@@ -1,0 +1,23 @@
+.mySwiper {
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 2em;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImgSwiper{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+  

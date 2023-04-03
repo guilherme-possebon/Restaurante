@@ -1,0 +1,104 @@
+/*----------------------------------------------------------------------*/
+/* Geral */
+/*----------------------------------------------------------------------*/
+
+.HrRemovivel {
+    display: none;
+}
+
+
+/*----------------------------------------------------------------------*/
+/* Header Principal */
+/*----------------------------------------------------------------------*/
+
+.Header {
+    display: flex;
+    padding: 0 .5em .5em .5em;
+    justify-content: center;
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .HeaderContainer {
+        max-width: 1400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav {
+        margin-top: 2em;
+        
+        
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5em;
+            list-style: none;
+            color: white;
+            justify-content: center;
+            
+            .itens {
+                border-bottom: 1px solid black;
+            }
+            
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+        
+        
+    }
+}
+
+/*----------------------------------------------------------------------*/
+/* Para about, contact, reserva e delivery */
+/*----------------------------------------------------------------------*/
+
+.Container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.ContainerListChildrenAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 410px;
+    height: 560px;
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    ul {
+        list-style: none;
+        padding: 3em 1em;
+    }
+    h3 {
+        padding-bottom: 15px;
+    }
+}
+.ContainerImgAll {
+    width: 410px;
+    height: 560px;
+}   
+
+/*----------------------------------------------------------------------*/
+/* Media Query */
+/*----------------------------------------------------------------------*/
+
+@media screen and (min-width: 470px ) {
+    .DivLogo {
+        margin-top: 2em;
+    }
+}
+@media screen and (max-width: 470px ) {
+    .DivLogo {
+        margin-top: 4.4em;
+    }
+}

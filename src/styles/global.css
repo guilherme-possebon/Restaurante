@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
