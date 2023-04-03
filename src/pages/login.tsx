@@ -5,8 +5,8 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 
 import { auth } from '../../services/firebase'
-import { GhButton, GoButton } from './Login/Layouts/_buttons'
-import VoltarButton from './Login/Layouts/_voltarButton'
+import GoButton, { GhButton } from './Components/LayoutLogin/_buttons'
+import VoltarButton from './Components/LayoutLogin/_voltarButton'
 
 import styles from './Login/Scss/LayoutLogin.module.scss'
 

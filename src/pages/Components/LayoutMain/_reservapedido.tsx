@@ -4,7 +4,7 @@ import styles from './Scss/ReservaPedido.module.scss'
 import reservaImg from '../../../public/reserva.jpg'
 import deliverymg from '../../../public/delivery.jpg'
 
-export function Reserva() {
+export default function Reserva() {
   return (
     <>
       <section className={`${styles.Container} ${styles.espaco}`} id="reserva">

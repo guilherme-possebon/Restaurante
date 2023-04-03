@@ -16,7 +16,7 @@ interface ContactTypes {
   instagramHref: string
 }
 
-export function Contact({
+export default function Contact({
   numero,
   email,
   emailHref,

@@ -1,5 +1,6 @@
+// Imagens
+
 import Canapes from '../../../../public/Canapes.jpg'
-import Marmita from '../../../../public/marmita.jpg'
 import SaladaAtum from '../../../../public/SaladaAtum.jpg'
 import SaladaOrelha from '../../../../public/SaladaOrelha.jpg'
 import SaladaPolvo from '../../../../public/SaladaPolvo.jpg'
@@ -7,18 +8,19 @@ import SaladaRussa from '../../../../public/SaladaRussaCamarão.jpg'
 import tabuaEnchidos from '../../../../public/Tábua-de-enchidos.jpg'
 import tabuaQueijos from '../../../../public/Tábua-de-queijos.jpg'
 
-import CardapioItens1OP from '../Layout/_cardapioItens1OP'
-import CardapioItensSize from '../Layout/_cardapioItensSize'
+// Componentes
+import CardapioItens1OP from './_cardapioItens1OP'
+import CardapioItensSize from './_cardapioItensSize'
 
 import styles from '../Scss/Cardapio.module.scss'
 
-export default function Procao() {
+export default function Entrada() {
   return (
     <>
       <div>
-        <h2 className={styles.PageName}>Proção</h2>
+        <h2 className={styles.PageName}>Entrada</h2>
       </div>
-      <div className={styles.CDContainer}>
+      <ul className={styles.CDContainer}>
         <CardapioItens1OP
           NomeDoPrato={'Canapés'}
           Desc={
@@ -43,73 +45,50 @@ export default function Procao() {
             '3x queijo de vaca, 3x queijo Camembert, 2x queijo Cantal, 2x queijo Comté, 2x queijo Gorgonzola'
           }
           Preco={'19,90'}
-          imgPrato={SaladaAtum}
-        />
-
-        <CardapioItensSize
-          NomeDoPrato={'teste'}
-          Desc={
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
-          }
-          PrecoP={'30,00'}
-          PrecoM={'40,00'}
-          PrecoG={'50,00'}
-          imgPrato={SaladaOrelha}
-        />
-
-        <CardapioItensSize
-          NomeDoPrato={'teste'}
-          Desc={
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
-          }
-          PrecoP={'30,00'}
-          PrecoM={'40,00'}
-          PrecoG={'50,00'}
-          imgPrato={Marmita}
-        />
-
-        <CardapioItensSize
-          NomeDoPrato={'teste'}
-          Desc={
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
-          }
-          PrecoP={'30,00'}
-          PrecoM={'40,00'}
-          PrecoG={'50,00'}
-          imgPrato={SaladaPolvo}
-        />
-
-        <CardapioItensSize
-          NomeDoPrato={'teste'}
-          Desc={
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
-          }
-          PrecoP={'30,00'}
-          PrecoM={'40,00'}
-          PrecoG={'50,00'}
-          imgPrato={SaladaOrelha}
-        />
-
-        <CardapioItensSize
-          NomeDoPrato={'teste'}
-          Desc={
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
-          }
-          PrecoP={'30,00'}
-          PrecoM={'40,00'}
-          PrecoG={'50,00'}
           imgPrato={tabuaQueijos}
         />
 
-        <CardapioItensSize
-          NomeDoPrato={'teste'}
+        <CardapioItens1OP
+          NomeDoPrato={'Tábua de carnes frias'}
+          Desc={'2x chourição, 3x mortadela, 4x presunto, 2x fiambre,'}
+          Preco={'19,90'}
+          imgPrato={tabuaQueijos}
+        />
+
+        <CardapioItens1OP
+          NomeDoPrato={'Salada Russa com Camarão'}
           Desc={
             'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
           }
-          PrecoP={'30,00'}
-          PrecoM={'40,00'}
-          PrecoG={'50,00'}
+          Preco={'19,90'}
           imgPrato={SaladaRussa}
+        />
+
+        <CardapioItens1OP
+          NomeDoPrato={'Salada Atum'}
+          Desc={
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
+          }
+          Preco={'19,90'}
+          imgPrato={SaladaAtum}
+        />
+
+        <CardapioItens1OP
+          NomeDoPrato={'Salada Polvo'}
+          Desc={
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
+          }
+          Preco={'19,90'}
+          imgPrato={SaladaPolvo}
+        />
+
+        <CardapioItens1OP
+          NomeDoPrato={'Salada de Orelha-de-Porco'}
+          Desc={
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
+          }
+          Preco={'19,90'}
+          imgPrato={SaladaOrelha}
         />
 
         <CardapioItensSize
@@ -122,7 +101,18 @@ export default function Procao() {
           PrecoG={'50,00'}
           imgPrato={SaladaOrelha}
         />
-      </div>
+
+        <CardapioItensSize
+          NomeDoPrato={'teste'}
+          Desc={
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
+          }
+          PrecoP={'30,00'}
+          PrecoM={'40,00'}
+          PrecoG={'50,00'}
+          imgPrato={SaladaOrelha}
+        />
+      </ul>
     </>
   )
 }

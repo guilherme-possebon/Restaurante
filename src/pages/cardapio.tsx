@@ -1,14 +1,14 @@
 import Image from 'next/image'
-import Entrada from './Cardapio/Components/_entrada'
-import Porcao from './Cardapio/Components/_porcao'
-import Pratos from './Cardapio/Components/_pratos'
-import Bebidas from './Cardapio/Components/_bebidas'
-import Footer from './Main/_footer'
+import Entrada from './Components/LayoutCaradapio/_entrada'
+import Porcao from './Components/LayoutCaradapio/_porcao'
+import Pratos from './Components/LayoutCaradapio/_pratos'
+import Bebidas from './Components/LayoutCaradapio/_bebidas'
+import Footer from './Components/LayoutMain/_footer'
 
 import styles from './Cardapio/Scss/Cardapio.module.scss'
 
 import imgLogo from '../../public/Logo3.png'
-import NavBarCardapio from './Cardapio/Layout/_navBarCardapio'
+import NavBarCardapio from './Components/LayoutCaradapio/_navBarCardapio'
 import Head from 'next/head'
 
 function Cardapio() {

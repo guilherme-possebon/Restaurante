@@ -1,5 +1,5 @@
-import CardapioItens1OP from '../Layout/_cardapioItens1OP'
-import CardapioItensSize from '../Layout/_cardapioItensSize'
+import CardapioItens1OP from './_cardapioItens1OP'
+import CardapioItensSize from './_cardapioItensSize'
 
 import Canapes from '../../../../public/Canapes.jpg'
 import Marmita from '../../../../public/marmita.jpg'
@@ -12,11 +12,11 @@ import tabuaQueijos from '../../../../public/Tábua-de-queijos.jpg'
 
 import styles from '../Scss/Cardapio.module.scss'
 
-export default function Bebidas() {
+export default function Pratos() {
   return (
     <>
       <div>
-        <h2 className={styles.PageName}>Bebidas</h2>
+        <h2 className={styles.PageName}>Pratos</h2>
       </div>
       <div className={styles.CDContainer}>
         <CardapioItens1OP
@@ -26,38 +26,6 @@ export default function Bebidas() {
           }
           Preco={'19,90'}
           imgPrato={Canapes}
-        />
-        <CardapioItens1OP
-          NomeDoPrato={'Canapés'}
-          Desc={
-            ' 2x pastas de barrar, 1x mostarda, 1x ketchup, 1x maionese, 2x cebolas, 2x tomates cherry, 2x ovos cozidos, 2x azeitonas 2x queijo Gorgonzola.'
-          }
-          Preco={'19,90'}
-          imgPrato={SaladaRussa}
-        />
-        <CardapioItens1OP
-          NomeDoPrato={'Canapés'}
-          Desc={
-            ' 2x pastas de barrar, 1x mostarda, 1x ketchup, 1x maionese, 2x cebolas, 2x tomates cherry, 2x ovos cozidos, 2x azeitonas 2x queijo Gorgonzola.'
-          }
-          Preco={'19,90'}
-          imgPrato={SaladaPolvo}
-        />
-        <CardapioItens1OP
-          NomeDoPrato={'Canapés'}
-          Desc={
-            ' 2x pastas de barrar, 1x mostarda, 1x ketchup, 1x maionese, 2x cebolas, 2x tomates cherry, 2x ovos cozidos, 2x azeitonas 2x queijo Gorgonzola.'
-          }
-          Preco={'19,90'}
-          imgPrato={SaladaAtum}
-        />
-        <CardapioItens1OP
-          NomeDoPrato={'Canapés'}
-          Desc={
-            ' 2x pastas de barrar, 1x mostarda, 1x ketchup, 1x maionese, 2x cebolas, 2x tomates cherry, 2x ovos cozidos, 2x azeitonas 2x queijo Gorgonzola.'
-          }
-          Preco={'19,90'}
-          imgPrato={Marmita}
         />
 
         <CardapioItens1OP
@@ -86,7 +54,7 @@ export default function Bebidas() {
           PrecoP={'30,00'}
           PrecoM={'40,00'}
           PrecoG={'50,00'}
-          imgPrato={SaladaOrelha}
+          imgPrato={Marmita}
         />
 
         <CardapioItensSize
@@ -130,7 +98,7 @@ export default function Bebidas() {
           PrecoP={'30,00'}
           PrecoM={'40,00'}
           PrecoG={'50,00'}
-          imgPrato={SaladaOrelha}
+          imgPrato={SaladaAtum}
         />
 
         <CardapioItensSize
@@ -141,7 +109,7 @@ export default function Bebidas() {
           PrecoP={'30,00'}
           PrecoM={'40,00'}
           PrecoG={'50,00'}
-          imgPrato={SaladaOrelha}
+          imgPrato={SaladaPolvo}
         />
 
         <CardapioItensSize
@@ -152,7 +120,7 @@ export default function Bebidas() {
           PrecoP={'30,00'}
           PrecoM={'40,00'}
           PrecoG={'50,00'}
-          imgPrato={SaladaOrelha}
+          imgPrato={SaladaRussa}
         />
       </div>
     </>
