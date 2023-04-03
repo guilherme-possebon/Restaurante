@@ -85,7 +85,7 @@ export default function UserLoginButton() {
                     }}
                     className={styles.Button}
                   >
-                    Verificar E-mail
+                    Verificar e-mail
                   </button>
                 </>
               )}
