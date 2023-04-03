@@ -6,7 +6,7 @@ import { GoSignOut } from 'react-icons/go'
 import { GrClose } from 'react-icons/gr'
 import { auth } from '../../../../services/firebase'
 
-import styles from '../Scss/UserLoginButton.module.scss'
+import styles from '../ScssLogin/UserLoginButton.module.scss'
 
 // TODO Nome do arquivo "_userInfo.tsx"
 

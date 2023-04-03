@@ -9,7 +9,7 @@ import ex4 from '../../../../public/exemplo4.jpg'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
-import styles from '../Scss/Swipper.module.scss'
+import styles from '../ScssMain/Swipper.module.scss'
 
 export default function MySwipper() {
   return (

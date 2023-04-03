@@ -3,7 +3,7 @@ import Image from 'next/image'
 import logoHeader from '../../../../public/Logo3.png'
 import UserLoginButton from '../LayoutLogin/_userLoginButton'
 
-import styles from '../Scss/Main.module.scss'
+import styles from '../ScssMain/Main.module.scss'
 export default function Header() {
   return (
     <header className={styles.Header}>

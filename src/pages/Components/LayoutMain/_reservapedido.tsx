@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import styles from './Scss/ReservaPedido.module.scss'
+import styles from '../ScssMain/ReservaPedido.module.scss'
 
-import reservaImg from '../../../public/reserva.jpg'
-import deliverymg from '../../../public/delivery.jpg'
+import reservaImg from '../../../../public/reserva.jpg'
+import deliverymg from '../../../../public/delivery.jpg'
 
 export default function Reserva() {
   return (

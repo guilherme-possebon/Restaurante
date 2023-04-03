@@ -1,6 +1,6 @@
 import { FaArrowLeft } from 'react-icons/fa'
 
-import styles from '../Scss/LayoutLogin.module.scss'
+import styles from '../ScssLogin/LayoutLogin.module.scss'
 
 // TODO Nome do arquivo "_backButton.tsx"
 

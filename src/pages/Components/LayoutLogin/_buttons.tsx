@@ -5,7 +5,7 @@ import {
 } from 'react-firebase-hooks/auth'
 import { auth } from '../../../../services/firebase'
 
-import styles from '../Scss/Buttons.module.scss'
+import styles from '../ScssLogin/Buttons.module.scss'
 import { useRouter } from 'next/router'
 
 // TODO Nome do arquivo "_buttons.tsx"

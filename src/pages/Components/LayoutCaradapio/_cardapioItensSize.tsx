@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from 'next/image'
-import styles from '../Scss/Cardapio.module.scss'
+import styles from '../ScssCardapio/Cardapio.module.scss'
 
 interface CardapioInterface {
   NomeDoPrato: string

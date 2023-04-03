@@ -10,7 +10,7 @@ import SaladaRussa from '../../../../public/SaladaRussaCamarão.jpg'
 import tabuaEnchidos from '../../../../public/Tábua-de-enchidos.jpg'
 import tabuaQueijos from '../../../../public/Tábua-de-queijos.jpg'
 
-import styles from '../Scss/Cardapio.module.scss'
+import styles from '../ScssCardapio/Cardapio.module.scss'
 
 export default function Bebidas() {
   return (

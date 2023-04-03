@@ -1,5 +1,5 @@
 import { FaArrowLeft } from 'react-icons/fa'
-import styles from '../Scss/Cardapio.module.scss'
+import styles from '../ScssCardapio/Cardapio.module.scss'
 
 export default function NavBarCardapio() {
   return (

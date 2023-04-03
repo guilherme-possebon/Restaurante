@@ -3,7 +3,7 @@ import Image from 'next/image'
 import imgLogo from '../../../../public/Logo3.png'
 import NavBarCardapio from './_navBarCardapio'
 
-import styles from '../Scss/Cardapio.module.scss'
+import styles from '../ScssCardapio/Cardapio.module.scss'
 
 // TODO Nome "_headerCardapio.tsx"
 

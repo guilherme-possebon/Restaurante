@@ -5,7 +5,7 @@ import Pratos from './Components/LayoutCaradapio/_pratos'
 import Bebidas from './Components/LayoutCaradapio/_bebidas'
 import Footer from './Components/LayoutMain/_footer'
 
-import styles from './Cardapio/Scss/Cardapio.module.scss'
+import styles from './Components/ScssCardapio/Cardapio.module.scss'
 
 import imgLogo from '../../public/Logo3.png'
 import NavBarCardapio from './Components/LayoutCaradapio/_navBarCardapio'

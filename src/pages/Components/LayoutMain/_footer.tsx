@@ -1,9 +1,9 @@
 import { FaInstagram, FaFacebookF } from 'react-icons/fa'
 
-import logoFooter from '../../../public/Logo4.png'
+import logoFooter from '../../../../public/Logo4.png'
 import Image from 'next/image'
 
-import styles from './Scss/Footer.module.scss'
+import styles from '../ScssMain/Footer.module.scss'
 
 export default function Footer() {
   return (

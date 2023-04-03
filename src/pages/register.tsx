@@ -10,7 +10,7 @@ import { auth } from '../../services/firebase'
 import GoButton, { GhButton } from './Components/LayoutLogin/_buttons'
 import VoltarButton from './Components/LayoutLogin/_voltarButton'
 
-import styles from './Login/Scss/LayoutLogin.module.scss'
+import styles from './Components/ScssLogin/LayoutLogin.module.scss'
 
 export default function Register() {
   const [email, setEmail] = useState('')

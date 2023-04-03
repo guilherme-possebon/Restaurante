@@ -4,7 +4,7 @@ import Footer from './Components/LayoutMain/_footer'
 import Contact, { About } from './Components/LayoutMain/_contactAbout'
 import Reserva, { Pedido } from './Components/LayoutMain/_reservapedido'
 
-import styles from './Main/Scss/Main.module.scss'
+import styles from './Components/ScssMain/Main.module.scss'
 import Head from 'next/head'
 
 export default function MainContent() {
