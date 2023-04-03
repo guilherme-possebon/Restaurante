@@ -83,6 +83,7 @@ export default function UserLoginButton() {
                         alert('E-mail enviado')
                       }
                     }}
+                    className={styles.Button}
                   >
                     Verificar E-mail
                   </button>
