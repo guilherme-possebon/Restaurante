@@ -1,6 +1,6 @@
 import { FaInstagram, FaFacebookF } from 'react-icons/fa'
 
-import logoFooter from '../../../../public/Logo4.webp'
+import logoFooter from '../../../../public/logo4.webp'
 import Image from 'next/image'
 
 import styles from '../ScssMain/Footer.module.scss'
