@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import logoHeader from '../../../../public/Logo3.webp'
+import logoHeader from '../../../../public/logo3.webp'
 import UserLoginButton from '../LayoutLogin/_userLoginButton'
 
 import styles from '../ScssMain/Main.module.scss'
