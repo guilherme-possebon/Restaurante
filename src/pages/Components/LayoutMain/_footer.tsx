@@ -15,6 +15,7 @@ export default function Footer() {
               src={logoFooter}
               alt="Logo do rodapé"
               className={styles.imgLogo}
+              loading="lazy"
             />
           </div>
           <div className={styles.socialMedia}>

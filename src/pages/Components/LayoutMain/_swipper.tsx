@@ -32,7 +32,7 @@ export default function MySwipper() {
             src={ex1}
             alt="Exemplo1"
             className={styles.ImgSwiper}
-            priority
+            loading="lazy"
           />
         </SwiperSlide>
 
@@ -41,7 +41,7 @@ export default function MySwipper() {
             src={ex2}
             alt="Exemplo2"
             className={styles.ImgSwiper}
-            priority
+            loading="lazy"
           />
         </SwiperSlide>
 
@@ -50,7 +50,7 @@ export default function MySwipper() {
             src={ex3}
             alt="Exemplo3"
             className={styles.ImgSwiper}
-            priority
+            loading="lazy"
           />
         </SwiperSlide>
 
@@ -59,7 +59,7 @@ export default function MySwipper() {
             src={ex4}
             alt="Exemplo4"
             className={styles.ImgSwiper}
-            priority
+            loading="lazy"
           />
         </SwiperSlide>
       </Swiper>

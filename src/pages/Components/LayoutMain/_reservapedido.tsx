@@ -26,6 +26,7 @@ export function Pedido() {
         height={560}
         width={410}
         className={`${styles.ContainerImgAll} ${styles.ImgConfig}`}
+        loading="lazy"
       />
     </section>
   )
@@ -40,6 +41,7 @@ export default function Reserva() {
           height={560}
           width={410}
           className={`${styles.ContainerImgAll} ${styles.ImgConfig}`}
+          loading="lazy"
         />
         <div className={styles.CotainerListAll}>
           <div className={styles.ContainerListChildrenAll}>

@@ -25,7 +25,7 @@ export default function CardapioItensSize({
           <p>{Desc}</p>
         </div>
         <div className={styles.infos}>
-          <Image src={imgPrato} alt="Imagem do prato" />
+          <Image src={imgPrato} alt="Imagem do prato" loading="lazy" />
           <p className={styles.preco}>R$ {PrecoP} - P</p>
           <p className={styles.preco}>R$ {PrecoM} - M</p>
           <p className={styles.preco}>R$ {PrecoG} - G</p>

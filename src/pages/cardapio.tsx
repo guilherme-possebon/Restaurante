@@ -25,6 +25,7 @@ function Cardapio() {
               alt="Logo do restaurante"
               className={styles.imgLogo}
               width={160}
+              loading="lazy"
             />
             <h1>Cardápio</h1>
             <NavBarCardapio />

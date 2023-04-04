@@ -12,6 +12,7 @@ export default function HeaderCardapio() {
         src={imgLogo}
         alt="Logo do restaurante"
         className={styles.imgLogo}
+        loading="lazy"
       />
       <h1>Cardápio</h1>
       <NavBarCardapio />

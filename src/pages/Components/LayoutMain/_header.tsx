@@ -16,6 +16,7 @@ export default function Header() {
             className={styles.imgLogo}
             height={17}
             width={160}
+            loading="lazy"
           />
         </div>
         <nav>

@@ -22,7 +22,7 @@ export default function CardapioItens1OP({
           <p>{Desc}</p>
         </div>
         <div className={styles.infos}>
-          <Image src={imgPrato} alt="Imagem do prato" />
+          <Image src={imgPrato} alt="Imagem do prato" loading="lazy" />
           <p className={styles.preco}>R$ {Preco}</p>
         </div>
       </div>
