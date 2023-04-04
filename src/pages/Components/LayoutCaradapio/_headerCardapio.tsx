@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import imgLogo from '../../../../public/Logo3.png'
+import imgLogo from '../../../../public/Logo3.webp'
 import NavBarCardapio from './_navBarCardapio'
 
 import styles from '../ScssCardapio/Cardapio.module.scss'

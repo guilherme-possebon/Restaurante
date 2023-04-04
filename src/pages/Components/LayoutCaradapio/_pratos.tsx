@@ -2,7 +2,7 @@ import CardapioItens1OP from './_cardapioItens1OP'
 import CardapioItensSize from './_cardapioItensSize'
 
 import Canapes from '../../../../public/Canapes.webp'
-import Marmita from '../../../../public/marmita.webp'
+import Marmita from '../../../../public/Marmita.webp'
 import SaladaAtum from '../../../../public/SaladaAtum.webp'
 import SaladaOrelha from '../../../../public/SaladaOrelha.webp'
 import SaladaPolvo from '../../../../public/SaladaPolvo.webp'
