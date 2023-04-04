@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "host": "npm run build && firebase deploy --only hosting"
+    "lint": "next lint"
   },
   "dependencies": {
     "@types/node": "18.15.11",
