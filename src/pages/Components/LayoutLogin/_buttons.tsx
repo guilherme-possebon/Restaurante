@@ -8,8 +8,6 @@ import { auth } from '../../../../services/firebase'
 import styles from '../ScssLogin/Buttons.module.scss'
 import { useRouter } from 'next/router'
 
-// TODO Nome do arquivo "_buttons.tsx"
-
 export default function GoButton() {
   const [signInWithGoogle, user] = useSignInWithGoogle(auth)
   const router = useRouter()

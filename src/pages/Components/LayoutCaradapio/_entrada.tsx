@@ -1,12 +1,12 @@
 // Imagens
 
-import Canapes from '../../../../public/Canapes.jpg'
-import SaladaAtum from '../../../../public/SaladaAtum.jpg'
-import SaladaOrelha from '../../../../public/SaladaOrelha.jpg'
-import SaladaPolvo from '../../../../public/SaladaPolvo.jpg'
-import SaladaRussa from '../../../../public/SaladaRussaCamarão.jpg'
-import tabuaEnchidos from '../../../../public/Tábua-de-enchidos.jpg'
-import tabuaQueijos from '../../../../public/Tábua-de-queijos.jpg'
+import Canapes from '../../../../public/Canapes.webp'
+import SaladaAtum from '../../../../public/SaladaAtum.webp'
+import SaladaOrelha from '../../../../public/SaladaOrelha.webp'
+import SaladaPolvo from '../../../../public/SaladaPolvo.webp'
+import SaladaRussa from '../../../../public/SaladaRussaCamarao.webp'
+import tabuaEnchidos from '../../../../public/Tabua-de-enchidos.webp'
+import tabuaQueijos from '../../../../public/Tabua-de-queijos.webp'
 
 // Componentes
 import CardapioItens1OP from './_cardapioItens1OP'

@@ -2,10 +2,10 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation } from 'swiper'
 import Image from 'next/image'
 
-import ex1 from '../../../../public/exemplo1.jpg'
-import ex2 from '../../../../public/exemplo2.jpg'
-import ex3 from '../../../../public/exemplo3.jpg'
-import ex4 from '../../../../public/exemplo4.jpg'
+import ex1 from '../../../../public/exemplo1.webp'
+import ex2 from '../../../../public/exemplo2.webp'
+import ex3 from '../../../../public/exemplo3.webp'
+import ex4 from '../../../../public/exemplo4.webp'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -19,14 +19,15 @@ export default function MySwipper() {
         spaceBetween={0}
         loop={true}
         autoplay={{
-          delay: 200000,
+          delay: 10000,
           disableOnInteraction: false
         }}
         navigation={true}
         modules={[Navigation, Autoplay]}
         className={styles.mySwiper}
+        aria-label="Carrossel de imagens"
       >
-        <SwiperSlide>
+        <SwiperSlide aria-label="Imagem de exemplo 1">
           <Image
             src={ex1}
             alt="Exemplo1"
@@ -34,7 +35,8 @@ export default function MySwipper() {
             priority
           />
         </SwiperSlide>
-        <SwiperSlide>
+
+        <SwiperSlide aria-label="Imagem de exemplo 2">
           <Image
             src={ex2}
             alt="Exemplo2"
@@ -42,7 +44,8 @@ export default function MySwipper() {
             priority
           />
         </SwiperSlide>
-        <SwiperSlide>
+
+        <SwiperSlide aria-label="Imagem de exemplo 3">
           <Image
             src={ex3}
             alt="Exemplo3"
@@ -50,7 +53,8 @@ export default function MySwipper() {
             priority
           />
         </SwiperSlide>
-        <SwiperSlide>
+
+        <SwiperSlide aria-label="Imagem de exemplo 4">
           <Image
             src={ex4}
             alt="Exemplo4"

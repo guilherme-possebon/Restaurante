@@ -1,10 +1,6 @@
-.imgReserva {
-    background-image: url('/reserva.jpg');
-    background-size: cover;
-}
-.imgEntrega {
-    background-image: url('/delivery.jpg');
-    background-size: cover;
+.ImgConfig {
+    object-fit: cover;
+    object-position: center;
 }
 .text {
     padding: 3em 1em;
@@ -53,7 +49,6 @@
         height: auto;
     }
     .ContainerImgAll {
-        width: auto;
-        height: auto;
+       display: none;
     }
 }

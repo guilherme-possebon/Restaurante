@@ -1,5 +1,5 @@
 {
-  "name": "terceiroteste",
+  "name": "restaurante",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.2.4",
     "@types/node": "18.15.11",
     "@types/react": "18.0.31",
     "@types/react-dom": "18.0.11",
@@ -19,7 +20,6 @@
     "react-dom": "18.2.0",
     "react-firebase-hooks": "^5.1.1",
     "react-icons": "^4.8.0",
-    "sharp": "^0.32.0",
     "swiper": "^9.1.1",
     "typescript": "5.0.2"
   },

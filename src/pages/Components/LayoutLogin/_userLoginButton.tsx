@@ -8,8 +8,6 @@ import { auth } from '../../../../services/firebase'
 
 import styles from '../ScssLogin/UserLoginButton.module.scss'
 
-// TODO Nome do arquivo "_userInfo.tsx"
-
 export default function UserLoginButton() {
   const [isLoged, setIsLoged] = useState(false)
   const [showPopUp, setShowPopUp] = useState(false)
@@ -61,7 +59,10 @@ export default function UserLoginButton() {
 
   return (
     <>
-      <div className={styles.UserAndLoginButton}>
+      <div
+        className={styles.UserAndLoginButton}
+        aria-label="Botão de login ou informações do usuario"
+      >
         {/* se for "true" o botão de usuario aparece */}
         {isLoged && (
           <div>

@@ -7,7 +7,7 @@ import Footer from './Components/LayoutMain/_footer'
 
 import styles from './Components/ScssCardapio/Cardapio.module.scss'
 
-import imgLogo from '../../public/Logo3.png'
+import imgLogo from '../../public/Logo3.webp'
 import NavBarCardapio from './Components/LayoutCaradapio/_navBarCardapio'
 import Head from 'next/head'
 

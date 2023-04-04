@@ -5,8 +5,6 @@ import NavBarCardapio from './_navBarCardapio'
 
 import styles from '../ScssCardapio/Cardapio.module.scss'
 
-// TODO Nome "_headerCardapio.tsx"
-
 export default function HeaderCardapio() {
   return (
     <>

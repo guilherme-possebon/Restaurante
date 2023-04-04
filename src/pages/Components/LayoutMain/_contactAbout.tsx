@@ -4,8 +4,7 @@ import {
   FaFacebook,
   FaInstagram
 } from 'react-icons/fa'
-import styles from '../ScssMain/AboutContact.module.scss'
-
+import stylesAC from '../ScssMain/AboutContact.module.scss'
 interface ContactTypes {
   numero: number | string
   email: string
@@ -26,14 +25,13 @@ export default function Contact({
   instagramHref
 }: ContactTypes) {
   return (
-    <div className={styles.Container}>
+    <div className={stylesAC.Container}>
       <div
-        className={`${styles.ContainerImgAll} ${styles.ImgAboutContact}`}
+        className={`${stylesAC.ContainerImgAll} ${stylesAC.ImgAboutContact}`}
       ></div>
-
-      <div className={styles.ContainerListChildrenAll}>
+      <div className={stylesAC.ContainerListChildrenAll}>
         <h2>Contato</h2>
-        <ul className={styles.InfoList}>
+        <ul className={stylesAC.InfoList}>
           <li>
             <span>
               <FaPhoneAlt />
@@ -75,8 +73,8 @@ export default function Contact({
 
 export function About() {
   return (
-    <div className={styles.Container}>
-      <div className={styles.ContainerListChildrenAll}>
+    <div className={stylesAC.Container}>
+      <div className={stylesAC.ContainerListChildrenAll}>
         <h2>Sobre</h2>
         <ul>
           <li>
@@ -99,7 +97,7 @@ export function About() {
         </ul>
       </div>
       <div
-        className={`${styles.ContainerImgAll} ${styles.ImgAboutContact}`}
+        className={`${stylesAC.ContainerImgAll} ${stylesAC.ImgAboutContact}`}
       ></div>
     </div>
   )
