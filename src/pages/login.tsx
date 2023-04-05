@@ -3,6 +3,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
 import { onAuthStateChanged } from 'firebase/auth'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import { auth } from '../../services/firebase'
 import GoButton, { GhButton } from './Components/LayoutLogin/_buttons'
@@ -60,7 +61,7 @@ export default function Login() {
               </div>
               <div className={styles.links}>
                 {/* TODO  <a href='#'>Esqueceu a senha?</a> fazer uma pagina só para isso  */}
-                <a href="/register">Criar conta</a>
+                <Link href="/register">Criar conta</Link>
               </div>
               <div className={styles.loginButtons}>
                 <input type="submit" value={'Entrar na conta'} />

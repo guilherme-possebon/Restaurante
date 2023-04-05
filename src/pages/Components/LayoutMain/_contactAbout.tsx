@@ -4,6 +4,7 @@ import {
   FaFacebook,
   FaInstagram
 } from 'react-icons/fa'
+import Link from 'next/link'
 import stylesAC from '../ScssMain/AboutContact.module.scss'
 interface ContactTypes {
   numero: number | string
@@ -40,30 +41,30 @@ export default function Contact({
           </li>
 
           <li>
-            <a href={emailHref}>
+            <Link href={emailHref}>
               <span>
                 <FaRegEnvelope />
               </span>
               <p>{email}</p>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href={facebookHref}>
+            <Link href={facebookHref}>
               <span>
                 <FaFacebook />
               </span>
               <p>{facebook}</p>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href={instagramHref}>
+            <Link href={instagramHref}>
               <span>
                 <FaInstagram />
               </span>
               <p>{instagram}</p>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

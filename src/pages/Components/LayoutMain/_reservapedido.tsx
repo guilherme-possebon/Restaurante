@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../ScssMain/ReservaPedido.module.scss'
 
 import reservaImg from '../../../../public/reserva.webp'
@@ -14,9 +15,9 @@ export function Pedido() {
             Faça seu pedido que levaremos até a sua residência
           </div>
           <div>
-            <a href="/cardapio">
+            <Link href="/cardapio">
               <button className={styles.btnRD}>Fazer pedido</button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

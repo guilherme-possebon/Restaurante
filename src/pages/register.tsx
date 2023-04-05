@@ -5,6 +5,7 @@ import {
 } from 'react-firebase-hooks/auth'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import { auth } from '../../services/firebase'
 import GoButton, { GhButton } from './Components/LayoutLogin/_buttons'
@@ -43,9 +44,9 @@ export default function Register() {
       </Head>
       <section className={styles.Register}>
         <div className={styles.container}>
-          <div className={styles.box} style={{ height: 620 }}>
+          <div className={styles.box} style={{ height: 600 }}>
             <VoltarButton />
-            <form onSubmit={handleSignUp} style={{ height: 620 }}>
+            <form onSubmit={handleSignUp}>
               <h2>Criar conta</h2>
               <div className={styles.inputBox}>
                 <input
@@ -76,7 +77,7 @@ export default function Register() {
                 <i></i>
               </div>
               <div className={styles.links}>
-                <a href="/login">Entrar na conta</a>
+                <Link href="/login">Entrar na conta</Link>
               </div>
               <div className={styles.loginButtons}>
                 <input type="submit" value={'Criar conta'} />

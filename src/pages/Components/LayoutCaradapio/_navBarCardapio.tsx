@@ -1,14 +1,15 @@
 import { FaArrowLeft } from 'react-icons/fa'
+import Link from 'next/link'
 import styles from '../ScssCardapio/Cardapio.module.scss'
 
 export default function NavBarCardapio() {
   return (
     <>
       <div className={styles.teste}>
-        <a href="/" className={styles.BackButton}>
+        <Link href="/" className={styles.BackButton}>
           <FaArrowLeft />
           Voltar
-        </a>
+        </Link>
       </div>
       <nav className={styles.opcao}>
         <ul>

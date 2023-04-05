@@ -30,6 +30,7 @@ export default function GoButton() {
 export function GhButton() {
   const [signInWithGithub, user] = useSignInWithGithub(auth)
   const router = useRouter()
+
   if (user != undefined) {
     setTimeout(() => {
       return router.push('/')

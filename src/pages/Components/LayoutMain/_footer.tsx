@@ -1,7 +1,8 @@
 import { FaInstagram, FaFacebookF } from 'react-icons/fa'
+import Link from 'next/link'
+import Image from 'next/image'
 
 import logoFooter from '../../../../public/logo4.webp'
-import Image from 'next/image'
 
 import styles from '../ScssMain/Footer.module.scss'
 
@@ -19,12 +20,18 @@ export default function Footer() {
             />
           </div>
           <div className={styles.socialMedia}>
-            <a href="#" target={'_blank'}>
+            <Link
+              href="https://www.instagram.com/guilhermnhh/"
+              target={'_blank'}
+            >
               <FaInstagram />
-            </a>
-            <a href="#" target={'_blank'}>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/guilherme-possebon-4652a625a/"
+              target={'_blank'}
+            >
               <FaFacebookF />
-            </a>
+            </Link>
           </div>
         </div>
         <div>

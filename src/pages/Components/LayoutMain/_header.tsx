@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import logoHeader from '../../../../public/logo3.webp'
 import UserLoginButton from '../LayoutLogin/_userLoginButton'
@@ -22,7 +23,7 @@ export default function Header() {
         <nav>
           <ul className={styles.list}>
             <li className={styles.itens}>
-              <a href="/cardapio">Cardapio</a>
+              <Link href="/cardapio">Cardapio</Link>
             </li>
             <li className={styles.itens}>
               <a href="#pedido">Pedido</a>

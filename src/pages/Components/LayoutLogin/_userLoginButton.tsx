@@ -4,6 +4,7 @@ import { FaUserAlt } from 'react-icons/fa'
 import { useSignOut, useSendEmailVerification } from 'react-firebase-hooks/auth'
 import { GoSignOut } from 'react-icons/go'
 import { GrClose } from 'react-icons/gr'
+import Link from 'next/link'
 import { auth } from '../../../../services/firebase'
 
 import styles from '../ScssLogin/UserLoginButton.module.scss'
@@ -96,9 +97,9 @@ export default function UserLoginButton() {
 
         {/* Se for "False" o botão de login aparece */}
         {!isLoged && (
-          <a href="/login" className={styles.Button}>
+          <Link href="/login" className={styles.Button}>
             Login
-          </a>
+          </Link>
         )}
       </div>
 
