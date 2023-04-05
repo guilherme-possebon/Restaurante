@@ -41,30 +41,30 @@ export default function Contact({
           </li>
 
           <li>
-            <Link href={emailHref}>
+            <a href={emailHref}>
               <span>
                 <FaRegEnvelope />
               </span>
               <p>{email}</p>
-            </Link>
+            </a>
           </li>
 
           <li>
-            <Link href={facebookHref}>
+            <a href={facebookHref}>
               <span>
                 <FaFacebook />
               </span>
               <p>{facebook}</p>
-            </Link>
+            </a>
           </li>
 
           <li>
-            <Link href={instagramHref}>
+            <a href={instagramHref}>
               <span>
                 <FaInstagram />
               </span>
               <p>{instagram}</p>
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
