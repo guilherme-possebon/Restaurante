@@ -71,11 +71,9 @@ export default function UserLoginButton() {
               <FaUserAlt />
               {auth.currentUser?.displayName}
             </button>
-            <div>
+            <>
               {auth.currentUser?.emailVerified ? (
-                <div>
-                  <p>Teste Verificado</p>
-                </div>
+                <></>
               ) : (
                 <>
                   <button
@@ -91,7 +89,7 @@ export default function UserLoginButton() {
                   </button>
                 </>
               )}
-            </div>
+            </>
           </div>
         )}
 
