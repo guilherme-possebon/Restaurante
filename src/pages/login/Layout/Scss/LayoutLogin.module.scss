@@ -69,7 +69,7 @@
             letter-spacing: 0.1em;
         }
 
-        input[type="submit"] {
+        input[type="submit"], .teste {
             border: none;
             padding: 9px 25px;
             background: #fff;
@@ -154,7 +154,7 @@
             color: #8f8f8f;
             text-decoration: none;
 
-            &:hover, &:nth-child(2) {
+            &:hover, &:nth-child(1) {
                 color: #fff;
             }
         }

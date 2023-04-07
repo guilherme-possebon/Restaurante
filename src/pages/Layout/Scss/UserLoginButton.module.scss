@@ -20,10 +20,18 @@
 
     .PopUpButtons {
         display: flex;
+        align-items: center;
         gap: 1em;
 
         button {
             font-size: .7em;
+        }
+        .ChangeLinks {
+            font-size: .7em;
+
+            a {
+                border-bottom: 1px solid black;
+            }
         }
     }
 

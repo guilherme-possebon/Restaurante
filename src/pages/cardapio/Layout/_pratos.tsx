@@ -1,3 +1,6 @@
+import CardapioItens1OP from './_cardapioItens1OP'
+import CardapioItensSize from './_cardapioItensSize'
+
 import Canapes from '../../../../public/canapes.webp'
 import Marmita from '../../../../public/marmita.webp'
 import SaladaAtum from '../../../../public/saladaatum.webp'
@@ -7,16 +10,13 @@ import SaladaRussa from '../../../../public/saladarussacamarao.webp'
 import tabuaEnchidos from '../../../../public/tabua-de-enchidos.webp'
 import tabuaQueijos from '../../../../public/tabua-de-queijos.webp'
 
-import CardapioItens1OP from './_cardapioItens1OP'
-import CardapioItensSize from './_cardapioItensSize'
+import styles from './Scss/Cardapio.module.scss'
 
-import styles from '../ScssCardapio/Cardapio.module.scss'
-
-export default function Procao() {
+export default function Pratos() {
   return (
     <>
       <div>
-        <h2 className={styles.PageName}>Proção</h2>
+        <h2 className={styles.PageName}>Pratos</h2>
       </div>
       <div className={styles.CDContainer}>
         <CardapioItens1OP
@@ -43,18 +43,7 @@ export default function Procao() {
             '3x queijo de vaca, 3x queijo Camembert, 2x queijo Cantal, 2x queijo Comté, 2x queijo Gorgonzola'
           }
           Preco={'19,90'}
-          imgPrato={SaladaAtum}
-        />
-
-        <CardapioItensSize
-          NomeDoPrato={'teste'}
-          Desc={
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
-          }
-          PrecoP={'30,00'}
-          PrecoM={'40,00'}
-          PrecoG={'50,00'}
-          imgPrato={SaladaOrelha}
+          imgPrato={tabuaQueijos}
         />
 
         <CardapioItensSize
@@ -76,6 +65,50 @@ export default function Procao() {
           PrecoP={'30,00'}
           PrecoM={'40,00'}
           PrecoG={'50,00'}
+          imgPrato={SaladaOrelha}
+        />
+
+        <CardapioItensSize
+          NomeDoPrato={'teste'}
+          Desc={
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
+          }
+          PrecoP={'30,00'}
+          PrecoM={'40,00'}
+          PrecoG={'50,00'}
+          imgPrato={SaladaOrelha}
+        />
+
+        <CardapioItensSize
+          NomeDoPrato={'teste'}
+          Desc={
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
+          }
+          PrecoP={'30,00'}
+          PrecoM={'40,00'}
+          PrecoG={'50,00'}
+          imgPrato={SaladaOrelha}
+        />
+
+        <CardapioItensSize
+          NomeDoPrato={'teste'}
+          Desc={
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
+          }
+          PrecoP={'30,00'}
+          PrecoM={'40,00'}
+          PrecoG={'50,00'}
+          imgPrato={SaladaAtum}
+        />
+
+        <CardapioItensSize
+          NomeDoPrato={'teste'}
+          Desc={
+            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
+          }
+          PrecoP={'30,00'}
+          PrecoM={'40,00'}
+          PrecoG={'50,00'}
           imgPrato={SaladaPolvo}
         />
 
@@ -87,40 +120,7 @@ export default function Procao() {
           PrecoP={'30,00'}
           PrecoM={'40,00'}
           PrecoG={'50,00'}
-          imgPrato={SaladaOrelha}
-        />
-
-        <CardapioItensSize
-          NomeDoPrato={'teste'}
-          Desc={
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
-          }
-          PrecoP={'30,00'}
-          PrecoM={'40,00'}
-          PrecoG={'50,00'}
-          imgPrato={tabuaQueijos}
-        />
-
-        <CardapioItensSize
-          NomeDoPrato={'teste'}
-          Desc={
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
-          }
-          PrecoP={'30,00'}
-          PrecoM={'40,00'}
-          PrecoG={'50,00'}
           imgPrato={SaladaRussa}
-        />
-
-        <CardapioItensSize
-          NomeDoPrato={'teste'}
-          Desc={
-            'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nulla minus'
-          }
-          PrecoP={'30,00'}
-          PrecoM={'40,00'}
-          PrecoG={'50,00'}
-          imgPrato={SaladaOrelha}
         />
       </div>
     </>

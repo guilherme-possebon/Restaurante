@@ -3,10 +3,10 @@ import {
   useSignInWithGithub,
   useSignInWithGoogle
 } from 'react-firebase-hooks/auth'
-import { auth } from '../../../../services/firebase'
-
-import styles from '../ScssLogin/Buttons.module.scss'
 import { useRouter } from 'next/router'
+
+import { auth } from '../../../../services/firebase'
+import styles from './Scss/Buttons.module.scss'
 
 export default function GoButton() {
   const [signInWithGoogle, user] = useSignInWithGoogle(auth)

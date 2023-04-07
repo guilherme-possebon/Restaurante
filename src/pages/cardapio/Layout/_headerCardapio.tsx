@@ -3,7 +3,7 @@ import Image from 'next/image'
 import imgLogo from '../../../../public/logo3.webp'
 import NavBarCardapio from './_navBarCardapio'
 
-import styles from '../ScssCardapio/Cardapio.module.scss'
+import styles from './Scss/Cardapio.module.scss'
 
 export default function HeaderCardapio() {
   return (

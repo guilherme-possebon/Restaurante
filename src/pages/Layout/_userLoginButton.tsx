@@ -5,9 +5,9 @@ import { useSignOut, useSendEmailVerification } from 'react-firebase-hooks/auth'
 import { GoSignOut } from 'react-icons/go'
 import { GrClose } from 'react-icons/gr'
 import Link from 'next/link'
-import { auth } from '../../../../services/firebase'
 
-import styles from '../ScssLogin/UserLoginButton.module.scss'
+import { auth } from '../../../services/firebase'
+import styles from './Scss/UserLoginButton.module.scss'
 
 export default function UserLoginButton() {
   const [isLoged, setIsLoged] = useState(false)
@@ -125,9 +125,14 @@ export default function UserLoginButton() {
               >
                 <GoSignOut /> Desconectar
               </button>
-              <button className={styles.Button}>
-                Trocar a senha e/ou E-mail
-              </button>{' '}
+
+              <div className={styles.ChangeLinks}>
+                Trocar
+                <Link href="/login/trocar-senha"> senha </Link>
+                ou
+                <Link href="/login/trocar-email"> E-mail</Link>
+              </div>
+
               {/* TODO Por o sistema de trocar senha + uma pagina especifica pra isso */}
             </div>
             <button

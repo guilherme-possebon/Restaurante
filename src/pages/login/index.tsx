@@ -5,11 +5,11 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { auth } from '../../services/firebase'
-import GoButton, { GhButton } from './Components/LayoutLogin/_buttons'
-import VoltarButton from './Components/LayoutLogin/_voltarButton'
+import { auth } from '../../../services/firebase'
+import GoButton, { GhButton } from './Layout/_buttons'
+import VoltarButton from './Layout/_voltarButton'
 
-import styles from './Components/ScssLogin/LayoutLogin.module.scss'
+import styles from './Layout/Scss/LayoutLogin.module.scss'
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -60,8 +60,7 @@ export default function Login() {
                 <i></i>
               </div>
               <div className={styles.links}>
-                {/* TODO  <a href='#'>Esqueceu a senha?</a> fazer uma pagina só para isso  */}
-                <Link href="/register">Criar conta</Link>
+                <Link href="/registro">Criar conta</Link>
               </div>
               <div className={styles.loginButtons}>
                 <input type="submit" value={'Entrar na conta'} />

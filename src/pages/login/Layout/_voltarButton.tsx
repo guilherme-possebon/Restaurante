@@ -1,7 +1,7 @@
 import { FaArrowLeft } from 'react-icons/fa'
 import Link from 'next/link'
 
-import styles from '../ScssLogin/LayoutLogin.module.scss'
+import styles from './Scss/LayoutLogin.module.scss'
 
 export default function VoltarButton() {
   return (
