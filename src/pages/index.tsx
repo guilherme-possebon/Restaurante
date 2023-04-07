@@ -1,10 +1,10 @@
-import MySwipper from './Components/LayoutMain/_swipper'
-import Header from './Components/LayoutMain/_header'
-import Footer from './Components/LayoutMain/_footer'
-import Contact, { About } from './Components/LayoutMain/_contactAbout'
-import Reserva, { Pedido } from './Components/LayoutMain/_reservapedido'
+import MySwipper from './Layout/_swipper'
+import Header from './Layout/_header'
+import Footer from './Layout/_footer'
+import Contact, { About } from './Layout/_contactAbout'
+import Reserva, { Pedido } from './Layout/_reservapedido'
 
-import styles from './Components/ScssMain/Main.module.scss'
+import styles from './Layout/Scss/Main.module.scss'
 import Head from 'next/head'
 
 export default function MainContent() {

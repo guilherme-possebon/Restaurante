@@ -4,7 +4,8 @@ import {
   FaFacebook,
   FaInstagram
 } from 'react-icons/fa'
-import stylesAC from '../ScssMain/AboutContact.module.scss'
+import stylesAC from './Scss/AboutContact.module.scss'
+
 interface ContactTypes {
   numero: number | string
   email: string

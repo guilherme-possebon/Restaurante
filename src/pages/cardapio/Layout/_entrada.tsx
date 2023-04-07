@@ -12,7 +12,7 @@ import tabuaQueijos from '../../../../public/tabua-de-queijos.webp'
 import CardapioItens1OP from './_cardapioItens1OP'
 import CardapioItensSize from './_cardapioItensSize'
 
-import styles from '../ScssCardapio/Cardapio.module.scss'
+import styles from './Scss/Cardapio.module.scss'
 
 export default function Entrada() {
   return (

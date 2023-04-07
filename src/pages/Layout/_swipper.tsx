@@ -2,14 +2,14 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation } from 'swiper'
 import Image from 'next/image'
 
-import ex1 from '../../../../public/exemplo1.webp'
-import ex2 from '../../../../public/exemplo2.webp'
-import ex3 from '../../../../public/exemplo3.webp'
-import ex4 from '../../../../public/exemplo4.webp'
+import ex1 from '../../../public/exemplo1.webp'
+import ex2 from '../../../public/exemplo2.webp'
+import ex3 from '../../../public/exemplo3.webp'
+import ex4 from '../../../public/exemplo4.webp'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
-import styles from '../ScssMain/Swipper.module.scss'
+import styles from './Scss/Swipper.module.scss'
 
 export default function MySwipper() {
   return (
@@ -32,7 +32,7 @@ export default function MySwipper() {
             src={ex1}
             alt="Exemplo1"
             className={styles.ImgSwiper}
-            loading="lazy"
+            priority
           />
         </SwiperSlide>
 
