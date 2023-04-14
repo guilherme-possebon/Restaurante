@@ -3,11 +3,10 @@ import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { auth } from '../../../../services/firebase'
-import GoButton, { GhButton } from '../Layout/_buttons'
-import VoltarButton from '../Layout/_voltarButton'
+import { auth } from '@/../services/firebase'
+import VoltarButton from '@/Layouts/LoginAndRegister/_voltarButton'
 
-import styles from '../Layout/Scss/LayoutLogin.module.scss'
+import styles from '@/Layouts/LoginAndRegister/Scss/LayoutLogin.module.scss'
 
 export default function ChangePassword() {
   const [email, setEmail] = useState('')
@@ -33,7 +32,7 @@ export default function ChangePassword() {
       </Head>
       <section className={styles.Login}>
         <div className={styles.container}>
-          <div className={styles.box}>
+          <div className={styles.box} style={{ height: 275 }}>
             <VoltarButton />
             <form>
               <h2>Trocar E-mail</h2>
@@ -55,11 +54,6 @@ export default function ChangePassword() {
                   value={'Trocar E-mail'}
                   onClick={UpdateEmail}
                 />
-                <p>ou</p>
-                <div className={styles.socialButtons}>
-                  <GoButton />
-                  <GhButton />
-                </div>
               </div>
             </form>
           </div>

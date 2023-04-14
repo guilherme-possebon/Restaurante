@@ -5,11 +5,11 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { auth } from '../../../services/firebase'
-import GoButton, { GhButton } from './Layout/_buttons'
-import VoltarButton from './Layout/_voltarButton'
+import { auth } from '@/../services/firebase'
+import GoButton, { GhButton } from '@/Layouts/LoginAndRegister/_buttons'
+import VoltarButton from '@/Layouts/LoginAndRegister/_voltarButton'
 
-import styles from './Layout/Scss/LayoutLogin.module.scss'
+import styles from '@/Layouts/LoginAndRegister/Scss/LayoutLogin.module.scss'
 
 export default function Login() {
   const [email, setEmail] = useState('')

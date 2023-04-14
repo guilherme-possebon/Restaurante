@@ -7,7 +7,7 @@ import UserLoginButton from './_userLoginButton'
 import styles from './Scss/Main.module.scss'
 export default function Header() {
   return (
-    <header className={styles.Header}>
+    <header className={styles.Header} aria-label="Header">
       <div className={styles.HeaderContainer}>
         <UserLoginButton />
         <div className={styles.DivLogo}>

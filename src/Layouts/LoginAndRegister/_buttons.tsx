@@ -5,7 +5,7 @@ import {
 } from 'react-firebase-hooks/auth'
 import { useRouter } from 'next/router'
 
-import { auth } from '../../../../services/firebase'
+import { auth } from '@/../services/firebase'
 import styles from './Scss/Buttons.module.scss'
 
 export default function GoButton() {

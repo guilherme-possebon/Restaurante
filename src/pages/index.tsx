@@ -1,10 +1,10 @@
-import MySwipper from './Layout/_swipper'
-import Header from './Layout/_header'
-import Footer from './Layout/_footer'
-import Contact, { About } from './Layout/_contactAbout'
-import Reserva, { Pedido } from './Layout/_reservapedido'
+import MySwipper from '@/Layouts/Main/_swipper'
+import Header from '@/Layouts/Main/_header'
+import Footer from '@/Layouts/Main/_footer'
+import Contact, { About } from '@/Layouts/Main/_contactAbout'
+import Reserva, { Pedido } from '@/Layouts/Main/_reservapedido'
 
-import styles from './Layout/Scss/Main.module.scss'
+import styles from '@/Layouts/Main/Scss/Main.module.scss'
 import Head from 'next/head'
 
 export default function MainContent() {
@@ -15,7 +15,7 @@ export default function MainContent() {
       </Head>
       <Header />
       <MySwipper />
-      <section>
+      <section aria-label="Sobre e contato">
         <About />
         <hr className={styles.HrRemovivel} />
         <Contact
@@ -29,7 +29,7 @@ export default function MainContent() {
         />
       </section>
       <hr className={styles.HrRemovivel} />
-      <section>
+      <section aria-label="Pedido e reserva">
         <Pedido />
         <hr className={styles.HrRemovivel} />
         <Reserva />
