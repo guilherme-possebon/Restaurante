@@ -20,7 +20,6 @@ export default function UserLoginButton() {
 
   const tooglePopUp = () => {
     setShowPopUp(!showPopUp)
-    console.log(showPopUp)
   }
 
   useEffect(() => {

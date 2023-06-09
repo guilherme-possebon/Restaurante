@@ -10,11 +10,8 @@ import styles from '@/Layouts/LoginAndRegister/Scss/LayoutLogin.module.scss'
 
 export default function ChangePassword() {
   const [password, setPassword] = useState('')
-  const [updatePassword, updating] = useUpdatePassword(auth)
+  const [updatePassword] = useUpdatePassword(auth)
   const router = useRouter()
-  if (updating) {
-    console.log('carregando')
-  }
 
   async function UpdatePassword(e: { preventDefault: () => void }) {
     e.preventDefault()
