@@ -31,19 +31,19 @@ function Cardapio() {
             <NavBarCardapio />
           </header>
 
-          <section id={styles.Entrada}>
+          <section id="Entrada">
             <Entrada />
           </section>
 
-          <section id={styles.Pratos}>
+          <section id="Pratos">
             <Pratos />
           </section>
 
-          <section id={styles.Porção}>
+          <section id="Porção">
             <Porcao />
           </section>
 
-          <section id={styles.Drinks}>
+          <section id="Drinks">
             <Bebidas />
           </section>
         </div>
